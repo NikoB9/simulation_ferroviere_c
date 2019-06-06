@@ -10,22 +10,30 @@
 
 //horloge 
 time_t deb, fin;
+long double debut;
+
+/*Renvoie en long le Temps en microseconds */
+long double getMicrotime(){
+  struct timeval currentTime;
+  gettimeofday(&currentTime, NULL);
+  return currentTime.tv_sec * (int)1e6 + currentTime.tv_usec;
+}
 
 
-int main(int argc, char** argv){
 
-
-  //la difference en seconde correspond au temps d'execution 
-  //nous devons le passer en temps simule 
-	
-	time(&deb);
-	int i;
+void function(){
+		int i;
 	for(i=0;i<=60;i++){
-		time(&fin);
+		/*time(&fin);
+		printf("Debut : %d\n", deb);
+		printf("fin : %d\n", fin );
 		// secondes = secondes*60*24;
-		double diff = difftime(fin, deb);
-		printf("%f\n", diff);
+		float diff = difftime(fin, deb);
+		printf("%f\n", diff);*/
 
+		long double diff=getMicrotime()-debut;
+		printf("%f\n", (double)diff);
+		diff=diff/1000000;
 		diff= diff*1440;
   //temps reel
 		int heure = diff/(60*60);
@@ -42,8 +50,21 @@ int main(int argc, char** argv){
 		printf("___%d:%d:%d___\n", heure, minutes, secondes);
 
 
-		usleep(1000000);
+		usleep(1000070);
 	}
+}
+
+
+int main(int argc, char** argv){
+
+
+  //la difference en seconde correspond au temps d'execution 
+  //nous devons le passer en temps simule 
+	
+	time(&deb);
+	debut=getMicrotime();
+
+	function();
 	
 
 }

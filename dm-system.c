@@ -54,11 +54,20 @@ struct voyageur
 //on part du ptinciper qu"il y a 20 guichet dans chaque gare
 sem_t semaphoreGuichet;
 
-//horloge 
-time_t debut, fin;
+/*time_t debut, fin;
 clock_t start, finish;
-double duration; 
+*/ 
 
+//horloge
+double duration;
+double debutMicrosecondes;
+
+/*Renvoie en long le Temps en microseconds */
+long double getMicrotime(){
+  struct timeval currentTime;
+  gettimeofday(&currentTime, NULL);
+  return currentTime.tv_sec * (int)1e6 + currentTime.tv_usec;
+}
 
 
 //on ramène donc en microseconde pour nos besoin en divisant par 10^-6
@@ -83,27 +92,27 @@ void afficheTemps(double diff){
   //la difference en seconde correspond au temps d'execution 
   //nous devons le passer en temps simule 
 
-  printf("%f\n", (double) start/CLOCKS_PER_SEC);
+  /*printf("%f\n", (double) start/CLOCKS_PER_SEC);
   printf("%f\n", (double) finish/CLOCKS_PER_SEC);
-  printf("%f\n", (double) diff);
+  printf("%f\n", (double) diff);*/
 
-    diff=diff*1440;
-    int heure = diff/(60*60);
+  diff=diff*1440;
+  int heure = diff/(60*60);
 
-    if(heure==24){
-      exit(0);
-    }
+  if(heure==24){
+    exit(0);
+  }
 
-    diff=diff-heure*60*60;
-    int minutes = diff/(60);
-    diff=diff-minutes*60;
-    int secondes = diff;
+  diff=diff-heure*60*60;
+  int minutes = diff/(60);
+  diff=diff-minutes*60;
+  int secondes = diff;
 
-    time_t dateJour;
-    time(&dateJour);
-    struct tm tm = *localtime(&dateJour);
+  time_t dateJour;
+  time(&dateJour);
+  struct tm tm = *localtime(&dateJour);
 
-    printf("___%d/%d/%d__:__%d:%d:%d___\n", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900, heure, minutes, (int) secondes);
+  printf("___%d/%d/%d__:__%d:%d:%d___\n", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900, heure, minutes, (int) secondes);
 }
 
 /*************************************************************
@@ -113,7 +122,7 @@ void afficheTemps(double diff){
 **************************************************************/
 double nbAleatoire(double deb, double fin){
 
-    return ( rand()/(double)RAND_MAX ) * (fin-deb) + deb;
+  return ( rand()/(double)RAND_MAX ) * (fin-deb) + deb;
 
 }
 
@@ -135,12 +144,12 @@ void*  payerBillet (void* infos) {
 
   //Opération prendre la ressource sur le sémaphore
   sem_wait(&semaphoreGuichet);
-    printf("Le client n°%s paye son billet %d€\n", numclient, prixBillet);
+  printf("Le client n°%s paye son billet %d€\n", numclient, prixBillet);
     usleep(ratioMinsEnMs(PASSAGE_GUICHET)); //Temps pour payer
     printf("Le client n°%s a payé son billet\n", numclient);
     //fflush(stdout);
   //Opération vendre la ressource sur le sémaphore
-  sem_post(&semaphoreGuichet);
+    sem_post(&semaphoreGuichet);
   usleep(ratioMinsEnMs(TEMPS_MONTEE_TRAIN)); //Temps de pour que le passager monte dans le train
 
 
@@ -149,22 +158,25 @@ void*  payerBillet (void* infos) {
 
   //time(&fin);
   //printf("%f secondes \n", difftime(fin, debut));
-  finish = clock();
-  duration = (double)(finish - start) / CLOCKS_PER_SEC; 
+  /*finish = clock();*/
+  //duration= (double)(finish - start) / CLOCKS_PER_SEC;
+  /*duration = difftime(clock(), start); */
+
+  //Recuperation de la duree en secondes 
+  duration=(getMicrotime()-debutMicrosecondes)/1000000;
   afficheTemps(duration);
 
   /*int* result = malloc(sizeof(int));
     *result = (10);
     return result;*/
 
-    pthread_exit(0);
+  pthread_exit(0);
 }
 
 int main(int argc, char** argv)
 {
-
-  //time(&debut);
-  start = clock(); 
+  //Initialiation de l'horloge
+  debutMicrosecondes=getMicrotime();
 
 
   if( argc == 4 )
@@ -222,8 +234,12 @@ int main(int argc, char** argv)
     
     //time(&fin);
     //printf("%f secondes \n", difftime(fin, debut));
-    finish = clock();
-    duration = (double)(finish - start) / CLOCKS_PER_SEC; 
+    /*finish = clock();
+    duration = (double)(finish - start) / CLOCKS_PER_SEC; */
+
+
+    //Recuperation de la duree en secondes 
+    duration=(getMicrotime()-debutMicrosecondes)/1000000;
     afficheTemps(duration);
 
 
@@ -233,12 +249,12 @@ int main(int argc, char** argv)
 
   }
   else if( argc > 4 ){
-      printf("Probleme avec arguments passes en params ...\n");
-      printf("Il y a %d arguments en trop.\n", argc-4);
+    printf("Probleme avec arguments passes en params ...\n");
+    printf("Il y a %d arguments en trop.\n", argc-4);
   }
   else{
-      printf("Probleme avec arguments passes en params ...\n");
-      printf("Il manque %d arguments.\n", 4-argc);
+    printf("Probleme avec arguments passes en params ...\n");
+    printf("Il manque %d arguments.\n", 4-argc);
   }
   return 0;
 }

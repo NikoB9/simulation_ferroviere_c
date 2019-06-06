@@ -1,311 +1,1997 @@
-455666 passagers voyagerons aujourd'hui, le montant minimum d'un billet sera de 56€ et le montant maximum de 60€.
+777 passagers voyagerons aujourd'hui, le montant minimum d'un billet sera de 89€ et le montant maximum de 89€.
 69166.666667
 69166.666667
 Le client n°0 fait la queue au guichet de la gare Austerlitz
 Le client n°0 paye son billet 2520€
 Le client n°0 a payé son billet
 Le client n°0 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:0___
+___6/6/2019__:__0:3:25___
 Le client n°1 fait la queue au guichet de la gare Austerlitz
 Le client n°1 paye son billet 1183€
 Le client n°1 a payé son billet
 Le client n°1 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:1___
+___6/6/2019__:__0:6:53___
 Le client n°2 fait la queue au guichet de la gare Austerlitz
 Le client n°2 paye son billet 2349€
 Le client n°2 a payé son billet
 Le client n°2 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:1___
+___6/6/2019__:__0:10:18___
 Le client n°3 fait la queue au guichet de la gare Austerlitz
 Le client n°3 paye son billet 2395€
 Le client n°3 a payé son billet
 Le client n°3 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:1___
+___6/6/2019__:__0:13:44___
 Le client n°4 fait la queue au guichet de la gare Austerlitz
 Le client n°4 paye son billet 2734€
 Le client n°4 a payé son billet
 Le client n°4 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:2___
+___6/6/2019__:__0:17:9___
 Le client n°5 fait la queue au guichet de la gare Austerlitz
 Le client n°5 paye son billet 592€
 Le client n°5 a payé son billet
 Le client n°5 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:2___
+___6/6/2019__:__0:20:34___
 Le client n°6 fait la queue au guichet de la gare Austerlitz
 Le client n°6 paye son billet 1005€
 Le client n°6 a payé son billet
 Le client n°6 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:2___
+___6/6/2019__:__0:24:14___
 Le client n°7 fait la queue au guichet de la gare Austerlitz
 Le client n°7 paye son billet 2304€
 Le client n°7 a payé son billet
 Le client n°7 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:3___
+___6/6/2019__:__0:27:39___
 Le client n°8 fait la queue au guichet de la gare Austerlitz
 Le client n°8 paye son billet 833€
 Le client n°8 a payé son billet
 Le client n°8 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:3___
+___6/6/2019__:__0:31:7___
 Le client n°9 fait la queue au guichet de la gare Austerlitz
 Le client n°9 paye son billet 1661€
 Le client n°9 a payé son billet
 Le client n°9 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:3___
+___6/6/2019__:__0:34:32___
 Le client n°10 fait la queue au guichet de la gare Austerlitz
 Le client n°10 paye son billet 1432€
 Le client n°10 a payé son billet
 Le client n°10 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:4___
+___6/6/2019__:__0:37:59___
 Le client n°11 fait la queue au guichet de la gare Austerlitz
 Le client n°11 paye son billet 1886€
 Le client n°11 a payé son billet
 Le client n°11 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:4___
+___6/6/2019__:__0:41:23___
 Le client n°12 fait la queue au guichet de la gare Austerlitz
 Le client n°12 paye son billet 1094€
 Le client n°12 a payé son billet
 Le client n°12 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:5___
+___6/6/2019__:__0:44:51___
 Le client n°13 fait la queue au guichet de la gare Austerlitz
 Le client n°13 paye son billet 1540€
 Le client n°13 a payé son billet
 Le client n°13 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:5___
+___6/6/2019__:__0:48:23___
 Le client n°14 fait la queue au guichet de la gare Austerlitz
 Le client n°14 paye son billet 2856€
 Le client n°14 a payé son billet
 Le client n°14 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:6___
+___6/6/2019__:__0:51:52___
 Le client n°15 fait la queue au guichet de la gare Austerlitz
 Le client n°15 paye son billet 2748€
 Le client n°15 a payé son billet
 Le client n°15 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:6___
+___6/6/2019__:__0:55:20___
 Le client n°16 fait la queue au guichet de la gare Austerlitz
 Le client n°16 paye son billet 1907€
 Le client n°16 a payé son billet
 Le client n°16 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:6___
+___6/6/2019__:__0:58:44___
 Le client n°17 fait la queue au guichet de la gare Austerlitz
 Le client n°17 paye son billet 2151€
 Le client n°17 a payé son billet
 Le client n°17 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:7___
+___6/6/2019__:__1:2:11___
 Le client n°18 fait la queue au guichet de la gare Austerlitz
 Le client n°18 paye son billet 424€
 Le client n°18 a payé son billet
 Le client n°18 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:7___
+___6/6/2019__:__1:5:39___
 Le client n°19 fait la queue au guichet de la gare Austerlitz
 Le client n°19 paye son billet 1820€
 Le client n°19 a payé son billet
 Le client n°19 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:8___
+___6/6/2019__:__1:9:7___
 Le client n°20 fait la queue au guichet de la gare Austerlitz
 Le client n°20 paye son billet 48€
 Le client n°20 a payé son billet
 Le client n°20 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:8___
+___6/6/2019__:__1:12:34___
 Le client n°21 fait la queue au guichet de la gare Austerlitz
 Le client n°21 paye son billet 728€
 Le client n°21 a payé son billet
 Le client n°21 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:8___
+___6/6/2019__:__1:15:59___
 Le client n°22 fait la queue au guichet de la gare Austerlitz
 Le client n°22 paye son billet 411€
 Le client n°22 a payé son billet
 Le client n°22 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:9___
+___6/6/2019__:__1:19:52___
 Le client n°23 fait la queue au guichet de la gare Austerlitz
 Le client n°23 paye son billet 2412€
 Le client n°23 a payé son billet
 Le client n°23 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:9___
+___6/6/2019__:__1:23:21___
 Le client n°24 fait la queue au guichet de la gare Austerlitz
 Le client n°24 paye son billet 470€
 Le client n°24 a payé son billet
 Le client n°24 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:10___
+___6/6/2019__:__1:26:50___
 Le client n°25 fait la queue au guichet de la gare Austerlitz
 Le client n°25 paye son billet 1202€
 Le client n°25 a payé son billet
 Le client n°25 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:10___
+___6/6/2019__:__1:33:25___
 Le client n°26 fait la queue au guichet de la gare Austerlitz
 Le client n°26 paye son billet 389€
 Le client n°26 a payé son billet
 Le client n°26 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:10___
+___6/6/2019__:__1:36:58___
 Le client n°27 fait la queue au guichet de la gare Austerlitz
 Le client n°27 paye son billet 326€
 Le client n°27 a payé son billet
 Le client n°27 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:11___
+___6/6/2019__:__1:40:31___
 Le client n°28 fait la queue au guichet de la gare Austerlitz
 Le client n°28 paye son billet 2996€
 Le client n°28 a payé son billet
 Le client n°28 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:11___
+___6/6/2019__:__1:43:57___
 Le client n°29 fait la queue au guichet de la gare Austerlitz
 Le client n°29 paye son billet 654€
 Le client n°29 a payé son billet
 Le client n°29 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:11___
+___6/6/2019__:__1:52:19___
 Le client n°30 fait la queue au guichet de la gare Austerlitz
 Le client n°30 paye son billet 1538€
 Le client n°30 a payé son billet
 Le client n°30 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:12___
+___6/6/2019__:__1:55:49___
 Le client n°31 fait la queue au guichet de la gare Austerlitz
 Le client n°31 paye son billet 2517€
 Le client n°31 a payé son billet
 Le client n°31 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:12___
+___6/6/2019__:__1:59:15___
 Le client n°32 fait la queue au guichet de la gare Austerlitz
 Le client n°32 paye son billet 1837€
 Le client n°32 a payé son billet
 Le client n°32 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:13___
+___6/6/2019__:__2:2:42___
 Le client n°33 fait la queue au guichet de la gare Austerlitz
 Le client n°33 paye son billet 888€
 Le client n°33 a payé son billet
 Le client n°33 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:13___
+___6/6/2019__:__2:6:10___
 Le client n°34 fait la queue au guichet de la gare Austerlitz
 Le client n°34 paye son billet 1912€
 Le client n°34 a payé son billet
 Le client n°34 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:14___
+___6/6/2019__:__2:10:12___
 Le client n°35 fait la queue au guichet de la gare Austerlitz
 Le client n°35 paye son billet 1572€
 Le client n°35 a payé son billet
 Le client n°35 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:14___
+___6/6/2019__:__2:17:45___
 Le client n°36 fait la queue au guichet de la gare Austerlitz
 Le client n°36 paye son billet 1480€
 Le client n°36 a payé son billet
 Le client n°36 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:14___
+___6/6/2019__:__2:21:9___
 Le client n°37 fait la queue au guichet de la gare Austerlitz
 Le client n°37 paye son billet 2918€
 Le client n°37 a payé son billet
 Le client n°37 est dans le train
-0.0
-0.0
-0.0
-___2/6/2019__:__0:0:15___
+___6/6/2019__:__2:24:35___
 Le client n°38 fait la queue au guichet de la gare Austerlitz
 Le client n°38 paye son billet 877€
 Le client n°38 a payé son billet
-Le clie
+Le client n°38 est dans le train
+___6/6/2019__:__2:28:5___
+Le client n°39 fait la queue au guichet de la gare Austerlitz
+Le client n°39 paye son billet 2314€
+Le client n°39 a payé son billet
+Le client n°39 est dans le train
+___6/6/2019__:__2:31:31___
+Le client n°40 fait la queue au guichet de la gare Austerlitz
+Le client n°40 paye son billet 1580€
+Le client n°40 a payé son billet
+Le client n°40 est dans le train
+___6/6/2019__:__2:34:58___
+Le client n°41 fait la queue au guichet de la gare Austerlitz
+Le client n°41 paye son billet 2309€
+Le client n°41 a payé son billet
+Le client n°41 est dans le train
+___6/6/2019__:__2:38:24___
+Le client n°42 fait la queue au guichet de la gare Austerlitz
+Le client n°42 paye son billet 1200€
+Le client n°42 a payé son billet
+Le client n°42 est dans le train
+___6/6/2019__:__2:41:53___
+Le client n°43 fait la queue au guichet de la gare Austerlitz
+Le client n°43 paye son billet 2674€
+Le client n°43 a payé son billet
+Le client n°43 est dans le train
+___6/6/2019__:__2:45:20___
+Le client n°44 fait la queue au guichet de la gare Austerlitz
+Le client n°44 paye son billet 849€
+Le client n°44 a payé son billet
+Le client n°44 est dans le train
+___6/6/2019__:__2:48:47___
+Le client n°45 fait la queue au guichet de la gare Austerlitz
+Le client n°45 paye son billet 1057€
+Le client n°45 a payé son billet
+Le client n°45 est dans le train
+___6/6/2019__:__2:52:14___
+Le client n°46 fait la queue au guichet de la gare Austerlitz
+Le client n°46 paye son billet 2423€
+Le client n°46 a payé son billet
+Le client n°46 est dans le train
+___6/6/2019__:__2:55:37___
+Le client n°47 fait la queue au guichet de la gare Austerlitz
+Le client n°47 paye son billet 2757€
+Le client n°47 a payé son billet
+Le client n°47 est dans le train
+___6/6/2019__:__2:59:52___
+Le client n°48 fait la queue au guichet de la gare Austerlitz
+Le client n°48 paye son billet 209€
+Le client n°48 a payé son billet
+Le client n°48 est dans le train
+___6/6/2019__:__3:4:7___
+Le client n°49 fait la queue au guichet de la gare Austerlitz
+Le client n°49 paye son billet 2847€
+Le client n°49 a payé son billet
+Le client n°49 est dans le train
+___6/6/2019__:__3:7:36___
+Le client n°50 fait la queue au guichet de la gare Austerlitz
+Le client n°50 paye son billet 1577€
+Le client n°50 a payé son billet
+Le client n°50 est dans le train
+___6/6/2019__:__3:11:2___
+Le client n°51 fait la queue au guichet de la gare Austerlitz
+Le client n°51 paye son billet 258€
+Le client n°51 a payé son billet
+Le client n°51 est dans le train
+___6/6/2019__:__3:17:23___
+Le client n°52 fait la queue au guichet de la gare Austerlitz
+Le client n°52 paye son billet 576€
+Le client n°52 a payé son billet
+Le client n°52 est dans le train
+___6/6/2019__:__3:21:31___
+Le client n°53 fait la queue au guichet de la gare Austerlitz
+Le client n°53 paye son billet 1989€
+Le client n°53 a payé son billet
+Le client n°53 est dans le train
+___6/6/2019__:__3:25:2___
+Le client n°54 fait la queue au guichet de la gare Austerlitz
+Le client n°54 paye son billet 2670€
+Le client n°54 a payé son billet
+Le client n°54 est dans le train
+___6/6/2019__:__3:28:32___
+Le client n°55 fait la queue au guichet de la gare Austerlitz
+Le client n°55 paye son billet 1046€
+Le client n°55 a payé son billet
+Le client n°55 est dans le train
+___6/6/2019__:__3:32:23___
+Le client n°56 fait la queue au guichet de la gare Austerlitz
+Le client n°56 paye son billet 192€
+Le client n°56 a payé son billet
+Le client n°56 est dans le train
+___6/6/2019__:__3:35:56___
+Le client n°57 fait la queue au guichet de la gare Austerlitz
+Le client n°57 paye son billet 60€
+Le client n°57 a payé son billet
+Le client n°57 est dans le train
+___6/6/2019__:__3:39:21___
+Le client n°58 fait la queue au guichet de la gare Austerlitz
+Le client n°58 paye son billet 1373€
+Le client n°58 a payé son billet
+Le client n°58 est dans le train
+___6/6/2019__:__3:42:45___
+Le client n°59 fait la queue au guichet de la gare Austerlitz
+Le client n°59 paye son billet 189€
+Le client n°59 a payé son billet
+Le client n°59 est dans le train
+___6/6/2019__:__3:46:10___
+Le client n°60 fait la queue au guichet de la gare Austerlitz
+Le client n°60 paye son billet 714€
+Le client n°60 a payé son billet
+Le client n°60 est dans le train
+___6/6/2019__:__3:49:35___
+Le client n°61 fait la queue au guichet de la gare Austerlitz
+Le client n°61 paye son billet 2911€
+Le client n°61 a payé son billet
+Le client n°61 est dans le train
+___6/6/2019__:__3:53:5___
+Le client n°62 fait la queue au guichet de la gare Austerlitz
+Le client n°62 paye son billet 2706€
+Le client n°62 a payé son billet
+Le client n°62 est dans le train
+___6/6/2019__:__3:56:30___
+Le client n°63 fait la queue au guichet de la gare Austerlitz
+Le client n°63 paye son billet 2552€
+Le client n°63 a payé son billet
+Le client n°63 est dans le train
+___6/6/2019__:__3:59:58___
+Le client n°64 fait la queue au guichet de la gare Austerlitz
+Le client n°64 paye son billet 799€
+Le client n°64 a payé son billet
+Le client n°64 est dans le train
+___6/6/2019__:__4:3:25___
+Le client n°65 fait la queue au guichet de la gare Austerlitz
+Le client n°65 paye son billet 1619€
+Le client n°65 a payé son billet
+Le client n°65 est dans le train
+___6/6/2019__:__4:6:50___
+Le client n°66 fait la queue au guichet de la gare Austerlitz
+Le client n°66 paye son billet 1125€
+Le client n°66 a payé son billet
+Le client n°66 est dans le train
+___6/6/2019__:__4:10:18___
+Le client n°67 fait la queue au guichet de la gare Austerlitz
+Le client n°67 paye son billet 2280€
+Le client n°67 a payé son billet
+Le client n°67 est dans le train
+___6/6/2019__:__4:13:45___
+Le client n°68 fait la queue au guichet de la gare Austerlitz
+Le client n°68 paye son billet 1537€
+Le client n°68 a payé son billet
+Le client n°68 est dans le train
+___6/6/2019__:__4:17:15___
+Le client n°69 fait la queue au guichet de la gare Austerlitz
+Le client n°69 paye son billet 2003€
+Le client n°69 a payé son billet
+Le client n°69 est dans le train
+___6/6/2019__:__4:20:43___
+Le client n°70 fait la queue au guichet de la gare Austerlitz
+Le client n°70 paye son billet 1594€
+Le client n°70 a payé son billet
+Le client n°70 est dans le train
+___6/6/2019__:__4:24:10___
+Le client n°71 fait la queue au guichet de la gare Austerlitz
+Le client n°71 paye son billet 117€
+Le client n°71 a payé son billet
+Le client n°71 est dans le train
+___6/6/2019__:__4:27:41___
+Le client n°72 fait la queue au guichet de la gare Austerlitz
+Le client n°72 paye son billet 1312€
+Le client n°72 a payé son billet
+Le client n°72 est dans le train
+___6/6/2019__:__4:31:7___
+Le client n°73 fait la queue au guichet de la gare Austerlitz
+Le client n°73 paye son billet 2795€
+Le client n°73 a payé son billet
+Le client n°73 est dans le train
+___6/6/2019__:__4:34:34___
+Le client n°74 fait la queue au guichet de la gare Austerlitz
+Le client n°74 paye son billet 2792€
+Le client n°74 a payé son billet
+Le client n°74 est dans le train
+___6/6/2019__:__4:38:2___
+Le client n°75 fait la queue au guichet de la gare Austerlitz
+Le client n°75 paye son billet 2162€
+Le client n°75 a payé son billet
+Le client n°75 est dans le train
+___6/6/2019__:__4:41:28___
+Le client n°76 fait la queue au guichet de la gare Austerlitz
+Le client n°76 paye son billet 852€
+Le client n°76 a payé son billet
+Le client n°76 est dans le train
+___6/6/2019__:__4:44:50___
+Le client n°77 fait la queue au guichet de la gare Austerlitz
+Le client n°77 paye son billet 2215€
+Le client n°77 a payé son billet
+Le client n°77 est dans le train
+___6/6/2019__:__4:48:15___
+Le client n°78 fait la queue au guichet de la gare Austerlitz
+Le client n°78 paye son billet 1919€
+Le client n°78 a payé son billet
+Le client n°78 est dans le train
+___6/6/2019__:__4:51:47___
+Le client n°79 fait la queue au guichet de la gare Austerlitz
+Le client n°79 paye son billet 1062€
+Le client n°79 a payé son billet
+Le client n°79 est dans le train
+___6/6/2019__:__4:55:14___
+Le client n°80 fait la queue au guichet de la gare Austerlitz
+Le client n°80 paye son billet 2063€
+Le client n°80 a payé son billet
+Le client n°80 est dans le train
+___6/6/2019__:__4:58:42___
+Le client n°81 fait la queue au guichet de la gare Austerlitz
+Le client n°81 paye son billet 497€
+Le client n°81 a payé son billet
+Le client n°81 est dans le train
+___6/6/2019__:__5:2:10___
+Le client n°82 fait la queue au guichet de la gare Austerlitz
+Le client n°82 paye son billet 1320€
+Le client n°82 a payé son billet
+Le client n°82 est dans le train
+___6/6/2019__:__5:5:37___
+Le client n°83 fait la queue au guichet de la gare Austerlitz
+Le client n°83 paye son billet 2640€
+Le client n°83 a payé son billet
+Le client n°83 est dans le train
+___6/6/2019__:__5:9:0___
+Le client n°84 fait la queue au guichet de la gare Austerlitz
+Le client n°84 paye son billet 2487€
+Le client n°84 a payé son billet
+Le client n°84 est dans le train
+___6/6/2019__:__5:12:30___
+Le client n°85 fait la queue au guichet de la gare Austerlitz
+Le client n°85 paye son billet 991€
+Le client n°85 a payé son billet
+Le client n°85 est dans le train
+___6/6/2019__:__5:15:58___
+Le client n°86 fait la queue au guichet de la gare Austerlitz
+Le client n°86 paye son billet 686€
+Le client n°86 a payé son billet
+Le client n°86 est dans le train
+___6/6/2019__:__5:19:23___
+Le client n°87 fait la queue au guichet de la gare Austerlitz
+Le client n°87 paye son billet 2680€
+Le client n°87 a payé son billet
+Le client n°87 est dans le train
+___6/6/2019__:__5:22:52___
+Le client n°88 fait la queue au guichet de la gare Austerlitz
+Le client n°88 paye son billet 1051€
+Le client n°88 a payé son billet
+Le client n°88 est dans le train
+___6/6/2019__:__5:26:16___
+Le client n°89 fait la queue au guichet de la gare Austerlitz
+Le client n°89 paye son billet 2060€
+Le client n°89 a payé son billet
+Le client n°89 est dans le train
+___6/6/2019__:__5:29:44___
+Le client n°90 fait la queue au guichet de la gare Austerlitz
+Le client n°90 paye son billet 2869€
+Le client n°90 a payé son billet
+Le client n°90 est dans le train
+___6/6/2019__:__5:33:9___
+Le client n°91 fait la queue au guichet de la gare Austerlitz
+Le client n°91 paye son billet 1765€
+Le client n°91 a payé son billet
+Le client n°91 est dans le train
+___6/6/2019__:__5:36:45___
+Le client n°92 fait la queue au guichet de la gare Austerlitz
+Le client n°92 paye son billet 1971€
+Le client n°92 a payé son billet
+Le client n°92 est dans le train
+___6/6/2019__:__5:40:6___
+Le client n°93 fait la queue au guichet de la gare Austerlitz
+Le client n°93 paye son billet 2576€
+Le client n°93 a payé son billet
+Le client n°93 est dans le train
+___6/6/2019__:__5:43:28___
+Le client n°94 fait la queue au guichet de la gare Austerlitz
+Le client n°94 paye son billet 1318€
+Le client n°94 a payé son billet
+Le client n°94 est dans le train
+___6/6/2019__:__5:46:51___
+Le client n°95 fait la queue au guichet de la gare Austerlitz
+Le client n°95 paye son billet 2771€
+Le client n°95 a payé son billet
+Le client n°95 est dans le train
+___6/6/2019__:__5:50:19___
+Le client n°96 fait la queue au guichet de la gare Austerlitz
+Le client n°96 paye son billet 1195€
+Le client n°96 a payé son billet
+Le client n°96 est dans le train
+___6/6/2019__:__5:53:46___
+Le client n°97 fait la queue au guichet de la gare Austerlitz
+Le client n°97 paye son billet 2444€
+Le client n°97 a payé son billet
+Le client n°97 est dans le train
+___6/6/2019__:__5:57:13___
+Le client n°98 fait la queue au guichet de la gare Austerlitz
+Le client n°98 paye son billet 2052€
+Le client n°98 a payé son billet
+Le client n°98 est dans le train
+___6/6/2019__:__6:0:42___
+Le client n°99 fait la queue au guichet de la gare Austerlitz
+Le client n°99 paye son billet 2732€
+Le client n°99 a payé son billet
+Le client n°99 est dans le train
+___6/6/2019__:__6:4:4___
+Le client n°100 fait la queue au guichet de la gare Austerlitz
+Le client n°100 paye son billet 1447€
+Le client n°100 a payé son billet
+Le client n°100 est dans le train
+___6/6/2019__:__6:7:27___
+Le client n°101 fait la queue au guichet de la gare Austerlitz
+Le client n°101 paye son billet 647€
+Le client n°101 a payé son billet
+Le client n°101 est dans le train
+___6/6/2019__:__6:10:51___
+Le client n°102 fait la queue au guichet de la gare Austerlitz
+Le client n°102 paye son billet 2850€
+Le client n°102 a payé son billet
+Le client n°102 est dans le train
+___6/6/2019__:__6:14:15___
+Le client n°103 fait la queue au guichet de la gare Austerlitz
+Le client n°103 paye son billet 2760€
+Le client n°103 a payé son billet
+Le client n°103 est dans le train
+___6/6/2019__:__6:17:43___
+Le client n°104 fait la queue au guichet de la gare Austerlitz
+Le client n°104 paye son billet 442€
+Le client n°104 a payé son billet
+Le client n°104 est dans le train
+___6/6/2019__:__6:21:7___
+Le client n°105 fait la queue au guichet de la gare Austerlitz
+Le client n°105 paye son billet 2643€
+Le client n°105 a payé son billet
+Le client n°105 est dans le train
+___6/6/2019__:__6:24:32___
+Le client n°106 fait la queue au guichet de la gare Austerlitz
+Le client n°106 paye son billet 1923€
+Le client n°106 a payé son billet
+Le client n°106 est dans le train
+___6/6/2019__:__6:27:58___
+Le client n°107 fait la queue au guichet de la gare Austerlitz
+Le client n°107 paye son billet 1295€
+Le client n°107 a payé son billet
+Le client n°107 est dans le train
+___6/6/2019__:__6:31:21___
+Le client n°108 fait la queue au guichet de la gare Austerlitz
+Le client n°108 paye son billet 1858€
+Le client n°108 a payé son billet
+Le client n°108 est dans le train
+___6/6/2019__:__6:34:44___
+Le client n°109 fait la queue au guichet de la gare Austerlitz
+Le client n°109 paye son billet 843€
+Le client n°109 a payé son billet
+Le client n°109 est dans le train
+___6/6/2019__:__6:38:9___
+Le client n°110 fait la queue au guichet de la gare Austerlitz
+Le client n°110 paye son billet 2358€
+Le client n°110 a payé son billet
+Le client n°110 est dans le train
+___6/6/2019__:__6:41:32___
+Le client n°111 fait la queue au guichet de la gare Austerlitz
+Le client n°111 paye son billet 922€
+Le client n°111 a payé son billet
+Le client n°111 est dans le train
+___6/6/2019__:__6:44:57___
+Le client n°112 fait la queue au guichet de la gare Austerlitz
+Le client n°112 paye son billet 1341€
+Le client n°112 a payé son billet
+Le client n°112 est dans le train
+___6/6/2019__:__6:48:22___
+Le client n°113 fait la queue au guichet de la gare Austerlitz
+Le client n°113 paye son billet 678€
+Le client n°113 a payé son billet
+Le client n°113 est dans le train
+___6/6/2019__:__6:51:45___
+Le client n°114 fait la queue au guichet de la gare Austerlitz
+Le client n°114 paye son billet 562€
+Le client n°114 a payé son billet
+Le client n°114 est dans le train
+___6/6/2019__:__6:55:10___
+Le client n°115 fait la queue au guichet de la gare Austerlitz
+Le client n°115 paye son billet 828€
+Le client n°115 a payé son billet
+Le client n°115 est dans le train
+___6/6/2019__:__6:58:35___
+Le client n°116 fait la queue au guichet de la gare Austerlitz
+Le client n°116 paye son billet 1669€
+Le client n°116 a payé son billet
+Le client n°116 est dans le train
+___6/6/2019__:__7:2:2___
+Le client n°117 fait la queue au guichet de la gare Austerlitz
+Le client n°117 paye son billet 1249€
+Le client n°117 a payé son billet
+Le client n°117 est dans le train
+___6/6/2019__:__7:5:25___
+Le client n°118 fait la queue au guichet de la gare Austerlitz
+Le client n°118 paye son billet 508€
+Le client n°118 a payé son billet
+Le client n°118 est dans le train
+___6/6/2019__:__7:8:48___
+Le client n°119 fait la queue au guichet de la gare Austerlitz
+Le client n°119 paye son billet 2720€
+Le client n°119 a payé son billet
+Le client n°119 est dans le train
+___6/6/2019__:__7:12:27___
+Le client n°120 fait la queue au guichet de la gare Austerlitz
+Le client n°120 paye son billet 309€
+Le client n°120 a payé son billet
+Le client n°120 est dans le train
+___6/6/2019__:__7:15:52___
+Le client n°121 fait la queue au guichet de la gare Austerlitz
+Le client n°121 paye son billet 378€
+Le client n°121 a payé son billet
+Le client n°121 est dans le train
+___6/6/2019__:__7:19:19___
+Le client n°122 fait la queue au guichet de la gare Austerlitz
+Le client n°122 paye son billet 1486€
+Le client n°122 a payé son billet
+Le client n°122 est dans le train
+___6/6/2019__:__7:22:45___
+Le client n°123 fait la queue au guichet de la gare Austerlitz
+Le client n°123 paye son billet 2281€
+Le client n°123 a payé son billet
+Le client n°123 est dans le train
+___6/6/2019__:__7:26:13___
+Le client n°124 fait la queue au guichet de la gare Austerlitz
+Le client n°124 paye son billet 2954€
+Le client n°124 a payé son billet
+Le client n°124 est dans le train
+___6/6/2019__:__7:29:39___
+Le client n°125 fait la queue au guichet de la gare Austerlitz
+Le client n°125 paye son billet 2805€
+Le client n°125 a payé son billet
+Le client n°125 est dans le train
+___6/6/2019__:__7:33:3___
+Le client n°126 fait la queue au guichet de la gare Austerlitz
+Le client n°126 paye son billet 2053€
+Le client n°126 a payé son billet
+Le client n°126 est dans le train
+___6/6/2019__:__7:36:28___
+Le client n°127 fait la queue au guichet de la gare Austerlitz
+Le client n°127 paye son billet 1149€
+Le client n°127 a payé son billet
+Le client n°127 est dans le train
+___6/6/2019__:__7:39:54___
+Le client n°128 fait la queue au guichet de la gare Austerlitz
+Le client n°128 paye son billet 2249€
+Le client n°128 a payé son billet
+Le client n°128 est dans le train
+___6/6/2019__:__7:43:21___
+Le client n°129 fait la queue au guichet de la gare Austerlitz
+Le client n°129 paye son billet 1105€
+Le client n°129 a payé son billet
+Le client n°129 est dans le train
+___6/6/2019__:__7:46:48___
+Le client n°130 fait la queue au guichet de la gare Austerlitz
+Le client n°130 paye son billet 882€
+Le client n°130 a payé son billet
+Le client n°130 est dans le train
+___6/6/2019__:__7:50:14___
+Le client n°131 fait la queue au guichet de la gare Austerlitz
+Le client n°131 paye son billet 696€
+Le client n°131 a payé son billet
+Le client n°131 est dans le train
+___6/6/2019__:__7:53:37___
+Le client n°132 fait la queue au guichet de la gare Austerlitz
+Le client n°132 paye son billet 1753€
+Le client n°132 a payé son billet
+Le client n°132 est dans le train
+___6/6/2019__:__7:57:4___
+Le client n°133 fait la queue au guichet de la gare Austerlitz
+Le client n°133 paye son billet 733€
+Le client n°133 a payé son billet
+Le client n°133 est dans le train
+___6/6/2019__:__8:0:30___
+Le client n°134 fait la queue au guichet de la gare Austerlitz
+Le client n°134 paye son billet 457€
+Le client n°134 a payé son billet
+Le client n°134 est dans le train
+___6/6/2019__:__8:3:59___
+Le client n°135 fait la queue au guichet de la gare Austerlitz
+Le client n°135 paye son billet 2196€
+Le client n°135 a payé son billet
+Le client n°135 est dans le train
+___6/6/2019__:__8:7:28___
+Le client n°136 fait la queue au guichet de la gare Austerlitz
+Le client n°136 paye son billet 376€
+Le client n°136 a payé son billet
+Le client n°136 est dans le train
+___6/6/2019__:__8:10:53___
+Le client n°137 fait la queue au guichet de la gare Austerlitz
+Le client n°137 paye son billet 2380€
+Le client n°137 a payé son billet
+Le client n°137 est dans le train
+___6/6/2019__:__8:14:22___
+Le client n°138 fait la queue au guichet de la gare Austerlitz
+Le client n°138 paye son billet 492€
+Le client n°138 a payé son billet
+Le client n°138 est dans le train
+___6/6/2019__:__8:17:48___
+Le client n°139 fait la queue au guichet de la gare Austerlitz
+Le client n°139 paye son billet 2235€
+Le client n°139 a payé son billet
+Le client n°139 est dans le train
+___6/6/2019__:__8:21:12___
+Le client n°140 fait la queue au guichet de la gare Austerlitz
+Le client n°140 paye son billet 223€
+Le client n°140 a payé son billet
+Le client n°140 est dans le train
+___6/6/2019__:__8:24:40___
+Le client n°141 fait la queue au guichet de la gare Austerlitz
+Le client n°141 paye son billet 2850€
+Le client n°141 a payé son billet
+Le client n°141 est dans le train
+___6/6/2019__:__8:28:4___
+Le client n°142 fait la queue au guichet de la gare Austerlitz
+Le client n°142 paye son billet 157€
+Le client n°142 a payé son billet
+Le client n°142 est dans le train
+___6/6/2019__:__8:31:30___
+Le client n°143 fait la queue au guichet de la gare Austerlitz
+Le client n°143 paye son billet 1564€
+Le client n°143 a payé son billet
+Le client n°143 est dans le train
+___6/6/2019__:__8:35:1___
+Le client n°144 fait la queue au guichet de la gare Austerlitz
+Le client n°144 paye son billet 528€
+Le client n°144 a payé son billet
+Le client n°144 est dans le train
+___6/6/2019__:__8:38:25___
+Le client n°145 fait la queue au guichet de la gare Austerlitz
+Le client n°145 paye son billet 720€
+Le client n°145 a payé son billet
+Le client n°145 est dans le train
+___6/6/2019__:__8:41:50___
+Le client n°146 fait la queue au guichet de la gare Austerlitz
+Le client n°146 paye son billet 2393€
+Le client n°146 a payé son billet
+Le client n°146 est dans le train
+___6/6/2019__:__8:45:31___
+Le client n°147 fait la queue au guichet de la gare Austerlitz
+Le client n°147 paye son billet 2197€
+Le client n°147 a payé son billet
+Le client n°147 est dans le train
+___6/6/2019__:__8:48:55___
+Le client n°148 fait la queue au guichet de la gare Austerlitz
+Le client n°148 paye son billet 1969€
+Le client n°148 a payé son billet
+Le client n°148 est dans le train
+___6/6/2019__:__8:52:23___
+Le client n°149 fait la queue au guichet de la gare Austerlitz
+Le client n°149 paye son billet 2902€
+Le client n°149 a payé son billet
+Le client n°149 est dans le train
+___6/6/2019__:__8:55:47___
+Le client n°150 fait la queue au guichet de la gare Austerlitz
+Le client n°150 paye son billet 1918€
+Le client n°150 a payé son billet
+Le client n°150 est dans le train
+___6/6/2019__:__8:59:16___
+Le client n°151 fait la queue au guichet de la gare Austerlitz
+Le client n°151 paye son billet 2279€
+Le client n°151 a payé son billet
+Le client n°151 est dans le train
+___6/6/2019__:__9:2:42___
+Le client n°152 fait la queue au guichet de la gare Austerlitz
+Le client n°152 paye son billet 280€
+Le client n°152 a payé son billet
+Le client n°152 est dans le train
+___6/6/2019__:__9:6:7___
+Le client n°153 fait la queue au guichet de la gare Austerlitz
+Le client n°153 paye son billet 404€
+Le client n°153 a payé son billet
+Le client n°153 est dans le train
+___6/6/2019__:__9:9:31___
+Le client n°154 fait la queue au guichet de la gare Austerlitz
+Le client n°154 paye son billet 1560€
+Le client n°154 a payé son billet
+Le client n°154 est dans le train
+___6/6/2019__:__9:12:58___
+Le client n°155 fait la queue au guichet de la gare Austerlitz
+Le client n°155 paye son billet 234€
+Le client n°155 a payé son billet
+Le client n°155 est dans le train
+___6/6/2019__:__9:16:25___
+Le client n°156 fait la queue au guichet de la gare Austerlitz
+Le client n°156 paye son billet 209€
+Le client n°156 a payé son billet
+Le client n°156 est dans le train
+___6/6/2019__:__9:19:52___
+Le client n°157 fait la queue au guichet de la gare Austerlitz
+Le client n°157 paye son billet 613€
+Le client n°157 a payé son billet
+Le client n°157 est dans le train
+___6/6/2019__:__9:23:18___
+Le client n°158 fait la queue au guichet de la gare Austerlitz
+Le client n°158 paye son billet 1384€
+Le client n°158 a payé son billet
+Le client n°158 est dans le train
+___6/6/2019__:__9:26:44___
+Le client n°159 fait la queue au guichet de la gare Austerlitz
+Le client n°159 paye son billet 2459€
+Le client n°159 a payé son billet
+Le client n°159 est dans le train
+___6/6/2019__:__9:30:11___
+Le client n°160 fait la queue au guichet de la gare Austerlitz
+Le client n°160 paye son billet 1719€
+Le client n°160 a payé son billet
+Le client n°160 est dans le train
+___6/6/2019__:__9:33:37___
+Le client n°161 fait la queue au guichet de la gare Austerlitz
+Le client n°161 paye son billet 2266€
+Le client n°161 a payé son billet
+Le client n°161 est dans le train
+___6/6/2019__:__9:37:2___
+Le client n°162 fait la queue au guichet de la gare Austerlitz
+Le client n°162 paye son billet 155€
+Le client n°162 a payé son billet
+Le client n°162 est dans le train
+___6/6/2019__:__9:40:27___
+Le client n°163 fait la queue au guichet de la gare Austerlitz
+Le client n°163 paye son billet 473€
+Le client n°163 a payé son billet
+Le client n°163 est dans le train
+___6/6/2019__:__9:43:54___
+Le client n°164 fait la queue au guichet de la gare Austerlitz
+Le client n°164 paye son billet 2999€
+Le client n°164 a payé son billet
+Le client n°164 est dans le train
+___6/6/2019__:__9:47:20___
+Le client n°165 fait la queue au guichet de la gare Austerlitz
+Le client n°165 paye son billet 612€
+Le client n°165 a payé son billet
+Le client n°165 est dans le train
+___6/6/2019__:__9:50:46___
+Le client n°166 fait la queue au guichet de la gare Austerlitz
+Le client n°166 paye son billet 2669€
+Le client n°166 a payé son billet
+Le client n°166 est dans le train
+___6/6/2019__:__9:54:12___
+Le client n°167 fait la queue au guichet de la gare Austerlitz
+Le client n°167 paye son billet 376€
+Le client n°167 a payé son billet
+Le client n°167 est dans le train
+___6/6/2019__:__9:57:39___
+Le client n°168 fait la queue au guichet de la gare Austerlitz
+Le client n°168 paye son billet 2993€
+Le client n°168 a payé son billet
+Le client n°168 est dans le train
+___6/6/2019__:__10:1:7___
+Le client n°169 fait la queue au guichet de la gare Austerlitz
+Le client n°169 paye son billet 162€
+Le client n°169 a payé son billet
+Le client n°169 est dans le train
+___6/6/2019__:__10:4:48___
+Le client n°170 fait la queue au guichet de la gare Austerlitz
+Le client n°170 paye son billet 2611€
+Le client n°170 a payé son billet
+Le client n°170 est dans le train
+___6/6/2019__:__10:8:16___
+Le client n°171 fait la queue au guichet de la gare Austerlitz
+Le client n°171 paye son billet 216€
+Le client n°171 a payé son billet
+Le client n°171 est dans le train
+___6/6/2019__:__10:11:43___
+Le client n°172 fait la queue au guichet de la gare Austerlitz
+Le client n°172 paye son billet 12€
+Le client n°172 a payé son billet
+Le client n°172 est dans le train
+___6/6/2019__:__10:15:8___
+Le client n°173 fait la queue au guichet de la gare Austerlitz
+Le client n°173 paye son billet 2769€
+Le client n°173 a payé son billet
+Le client n°173 est dans le train
+___6/6/2019__:__10:18:33___
+Le client n°174 fait la queue au guichet de la gare Austerlitz
+Le client n°174 paye son billet 1781€
+Le client n°174 a payé son billet
+Le client n°174 est dans le train
+___6/6/2019__:__10:21:58___
+Le client n°175 fait la queue au guichet de la gare Austerlitz
+Le client n°175 paye son billet 541€
+Le client n°175 a payé son billet
+Le client n°175 est dans le train
+___6/6/2019__:__10:25:23___
+Le client n°176 fait la queue au guichet de la gare Austerlitz
+Le client n°176 paye son billet 489€
+Le client n°176 a payé son billet
+Le client n°176 est dans le train
+___6/6/2019__:__10:28:51___
+Le client n°177 fait la queue au guichet de la gare Austerlitz
+Le client n°177 paye son billet 1175€
+Le client n°177 a payé son billet
+Le client n°177 est dans le train
+___6/6/2019__:__10:32:18___
+Le client n°178 fait la queue au guichet de la gare Austerlitz
+Le client n°178 paye son billet 2739€
+Le client n°178 a payé son billet
+Le client n°178 est dans le train
+___6/6/2019__:__10:36:37___
+Le client n°179 fait la queue au guichet de la gare Austerlitz
+Le client n°179 paye son billet 2459€
+Le client n°179 a payé son billet
+Le client n°179 est dans le train
+___6/6/2019__:__10:40:2___
+Le client n°180 fait la queue au guichet de la gare Austerlitz
+Le client n°180 paye son billet 1077€
+Le client n°180 a payé son billet
+Le client n°180 est dans le train
+___6/6/2019__:__10:43:49___
+Le client n°181 fait la queue au guichet de la gare Austerlitz
+Le client n°181 paye son billet 1657€
+Le client n°181 a payé son billet
+Le client n°181 est dans le train
+___6/6/2019__:__10:47:15___
+Le client n°182 fait la queue au guichet de la gare Austerlitz
+Le client n°182 paye son billet 1738€
+Le client n°182 a payé son billet
+Le client n°182 est dans le train
+___6/6/2019__:__10:50:44___
+Le client n°183 fait la queue au guichet de la gare Austerlitz
+Le client n°183 paye son billet 1357€
+Le client n°183 a payé son billet
+Le client n°183 est dans le train
+___6/6/2019__:__10:54:15___
+Le client n°184 fait la queue au guichet de la gare Austerlitz
+Le client n°184 paye son billet 2062€
+Le client n°184 a payé son billet
+Le client n°184 est dans le train
+___6/6/2019__:__10:58:37___
+Le client n°185 fait la queue au guichet de la gare Austerlitz
+Le client n°185 paye son billet 298€
+Le client n°185 a payé son billet
+Le client n°185 est dans le train
+___6/6/2019__:__11:5:41___
+Le client n°186 fait la queue au guichet de la gare Austerlitz
+Le client n°186 paye son billet 1592€
+Le client n°186 a payé son billet
+Le client n°186 est dans le train
+___6/6/2019__:__11:9:3___
+Le client n°187 fait la queue au guichet de la gare Austerlitz
+Le client n°187 paye son billet 2271€
+Le client n°187 a payé son billet
+Le client n°187 est dans le train
+___6/6/2019__:__11:12:33___
+Le client n°188 fait la queue au guichet de la gare Austerlitz
+Le client n°188 paye son billet 912€
+Le client n°188 a payé son billet
+Le client n°188 est dans le train
+___6/6/2019__:__11:15:59___
+Le client n°189 fait la queue au guichet de la gare Austerlitz
+Le client n°189 paye son billet 2976€
+Le client n°189 a payé son billet
+Le client n°189 est dans le train
+___6/6/2019__:__11:19:29___
+Le client n°190 fait la queue au guichet de la gare Austerlitz
+Le client n°190 paye son billet 1730€
+Le client n°190 a payé son billet
+Le client n°190 est dans le train
+___6/6/2019__:__11:22:58___
+Le client n°191 fait la queue au guichet de la gare Austerlitz
+Le client n°191 paye son billet 2632€
+Le client n°191 a payé son billet
+Le client n°191 est dans le train
+___6/6/2019__:__11:26:28___
+Le client n°192 fait la queue au guichet de la gare Austerlitz
+Le client n°192 paye son billet 2243€
+Le client n°192 a payé son billet
+Le client n°192 est dans le train
+___6/6/2019__:__11:29:56___
+Le client n°193 fait la queue au guichet de la gare Austerlitz
+Le client n°193 paye son billet 1886€
+Le client n°193 a payé son billet
+Le client n°193 est dans le train
+___6/6/2019__:__11:33:59___
+Le client n°194 fait la queue au guichet de la gare Austerlitz
+Le client n°194 paye son billet 106€
+Le client n°194 a payé son billet
+Le client n°194 est dans le train
+___6/6/2019__:__11:37:28___
+Le client n°195 fait la queue au guichet de la gare Austerlitz
+Le client n°195 paye son billet 2243€
+Le client n°195 a payé son billet
+Le client n°195 est dans le train
+___6/6/2019__:__11:41:23___
+Le client n°196 fait la queue au guichet de la gare Austerlitz
+Le client n°196 paye son billet 2499€
+Le client n°196 a payé son billet
+Le client n°196 est dans le train
+___6/6/2019__:__11:44:50___
+Le client n°197 fait la queue au guichet de la gare Austerlitz
+Le client n°197 paye son billet 2776€
+Le client n°197 a payé son billet
+Le client n°197 est dans le train
+___6/6/2019__:__11:48:31___
+Le client n°198 fait la queue au guichet de la gare Austerlitz
+Le client n°198 paye son billet 2619€
+Le client n°198 a payé son billet
+Le client n°198 est dans le train
+___6/6/2019__:__11:51:58___
+Le client n°199 fait la queue au guichet de la gare Austerlitz
+Le client n°199 paye son billet 2493€
+Le client n°199 a payé son billet
+Le client n°199 est dans le train
+___6/6/2019__:__11:56:32___
+Le client n°200 fait la queue au guichet de la gare Austerlitz
+Le client n°200 paye son billet 2938€
+Le client n°200 a payé son billet
+Le client n°200 est dans le train
+___6/6/2019__:__12:4:36___
+Le client n°201 fait la queue au guichet de la gare Austerlitz
+Le client n°201 paye son billet 2231€
+Le client n°201 a payé son billet
+Le client n°201 est dans le train
+___6/6/2019__:__12:8:6___
+Le client n°202 fait la queue au guichet de la gare Austerlitz
+Le client n°202 paye son billet 2710€
+Le client n°202 a payé son billet
+Le client n°202 est dans le train
+___6/6/2019__:__12:12:21___
+Le client n°203 fait la queue au guichet de la gare Austerlitz
+Le client n°203 paye son billet 2950€
+Le client n°203 a payé son billet
+Le client n°203 est dans le train
+___6/6/2019__:__12:15:53___
+Le client n°204 fait la queue au guichet de la gare Austerlitz
+Le client n°204 paye son billet 2000€
+Le client n°204 a payé son billet
+Le client n°204 est dans le train
+___6/6/2019__:__12:19:21___
+Le client n°205 fait la queue au guichet de la gare Austerlitz
+Le client n°205 paye son billet 1491€
+Le client n°205 a payé son billet
+Le client n°205 est dans le train
+___6/6/2019__:__12:22:45___
+Le client n°206 fait la queue au guichet de la gare Austerlitz
+Le client n°206 paye son billet 491€
+Le client n°206 a payé son billet
+Le client n°206 est dans le train
+___6/6/2019__:__12:26:9___
+Le client n°207 fait la queue au guichet de la gare Austerlitz
+Le client n°207 paye son billet 2490€
+Le client n°207 a payé son billet
+Le client n°207 est dans le train
+___6/6/2019__:__12:29:35___
+Le client n°208 fait la queue au guichet de la gare Austerlitz
+Le client n°208 paye son billet 2666€
+Le client n°208 a payé son billet
+Le client n°208 est dans le train
+___6/6/2019__:__12:32:58___
+Le client n°209 fait la queue au guichet de la gare Austerlitz
+Le client n°209 paye son billet 230€
+Le client n°209 a payé son billet
+Le client n°209 est dans le train
+___6/6/2019__:__12:36:23___
+Le client n°210 fait la queue au guichet de la gare Austerlitz
+Le client n°210 paye son billet 1949€
+Le client n°210 a payé son billet
+Le client n°210 est dans le train
+___6/6/2019__:__12:39:47___
+Le client n°211 fait la queue au guichet de la gare Austerlitz
+Le client n°211 paye son billet 744€
+Le client n°211 a payé son billet
+Le client n°211 est dans le train
+___6/6/2019__:__12:43:9___
+Le client n°212 fait la queue au guichet de la gare Austerlitz
+Le client n°212 paye son billet 1888€
+Le client n°212 a payé son billet
+Le client n°212 est dans le train
+___6/6/2019__:__12:46:32___
+Le client n°213 fait la queue au guichet de la gare Austerlitz
+Le client n°213 paye son billet 687€
+Le client n°213 a payé son billet
+Le client n°213 est dans le train
+___6/6/2019__:__12:49:56___
+Le client n°214 fait la queue au guichet de la gare Austerlitz
+Le client n°214 paye son billet 2101€
+Le client n°214 a payé son billet
+Le client n°214 est dans le train
+___6/6/2019__:__12:53:19___
+Le client n°215 fait la queue au guichet de la gare Austerlitz
+Le client n°215 paye son billet 950€
+Le client n°215 a payé son billet
+Le client n°215 est dans le train
+___6/6/2019__:__12:56:43___
+Le client n°216 fait la queue au guichet de la gare Austerlitz
+Le client n°216 paye son billet 986€
+Le client n°216 a payé son billet
+Le client n°216 est dans le train
+___6/6/2019__:__13:0:6___
+Le client n°217 fait la queue au guichet de la gare Austerlitz
+Le client n°217 paye son billet 694€
+Le client n°217 a payé son billet
+Le client n°217 est dans le train
+___6/6/2019__:__13:3:30___
+Le client n°218 fait la queue au guichet de la gare Austerlitz
+Le client n°218 paye son billet 222€
+Le client n°218 a payé son billet
+Le client n°218 est dans le train
+___6/6/2019__:__13:6:54___
+Le client n°219 fait la queue au guichet de la gare Austerlitz
+Le client n°219 paye son billet 1899€
+Le client n°219 a payé son billet
+Le client n°219 est dans le train
+___6/6/2019__:__13:10:32___
+Le client n°220 fait la queue au guichet de la gare Austerlitz
+Le client n°220 paye son billet 670€
+Le client n°220 a payé son billet
+Le client n°220 est dans le train
+___6/6/2019__:__13:13:55___
+Le client n°221 fait la queue au guichet de la gare Austerlitz
+Le client n°221 paye son billet 1953€
+Le client n°221 a payé son billet
+Le client n°221 est dans le train
+___6/6/2019__:__13:17:18___
+Le client n°222 fait la queue au guichet de la gare Austerlitz
+Le client n°222 paye son billet 1532€
+Le client n°222 a payé son billet
+Le client n°222 est dans le train
+___6/6/2019__:__13:20:45___
+Le client n°223 fait la queue au guichet de la gare Austerlitz
+Le client n°223 paye son billet 2914€
+Le client n°223 a payé son billet
+Le client n°223 est dans le train
+___6/6/2019__:__13:24:13___
+Le client n°224 fait la queue au guichet de la gare Austerlitz
+Le client n°224 paye son billet 840€
+Le client n°224 a payé son billet
+Le client n°224 est dans le train
+___6/6/2019__:__13:27:38___
+Le client n°225 fait la queue au guichet de la gare Austerlitz
+Le client n°225 paye son billet 1638€
+Le client n°225 a payé son billet
+Le client n°225 est dans le train
+___6/6/2019__:__13:31:3___
+Le client n°226 fait la queue au guichet de la gare Austerlitz
+Le client n°226 paye son billet 2157€
+Le client n°226 a payé son billet
+Le client n°226 est dans le train
+___6/6/2019__:__13:34:27___
+Le client n°227 fait la queue au guichet de la gare Austerlitz
+Le client n°227 paye son billet 339€
+Le client n°227 a payé son billet
+Le client n°227 est dans le train
+___6/6/2019__:__13:37:52___
+Le client n°228 fait la queue au guichet de la gare Austerlitz
+Le client n°228 paye son billet 1414€
+Le client n°228 a payé son billet
+Le client n°228 est dans le train
+___6/6/2019__:__13:41:18___
+Le client n°229 fait la queue au guichet de la gare Austerlitz
+Le client n°229 paye son billet 1777€
+Le client n°229 a payé son billet
+Le client n°229 est dans le train
+___6/6/2019__:__13:44:45___
+Le client n°230 fait la queue au guichet de la gare Austerlitz
+Le client n°230 paye son billet 2832€
+Le client n°230 a payé son billet
+Le client n°230 est dans le train
+___6/6/2019__:__13:48:11___
+Le client n°231 fait la queue au guichet de la gare Austerlitz
+Le client n°231 paye son billet 1352€
+Le client n°231 a payé son billet
+Le client n°231 est dans le train
+___6/6/2019__:__13:51:36___
+Le client n°232 fait la queue au guichet de la gare Austerlitz
+Le client n°232 paye son billet 1009€
+Le client n°232 a payé son billet
+Le client n°232 est dans le train
+___6/6/2019__:__13:55:2___
+Le client n°233 fait la queue au guichet de la gare Austerlitz
+Le client n°233 paye son billet 2543€
+Le client n°233 a payé son billet
+Le client n°233 est dans le train
+___6/6/2019__:__13:58:28___
+Le client n°234 fait la queue au guichet de la gare Austerlitz
+Le client n°234 paye son billet 1303€
+Le client n°234 a payé son billet
+Le client n°234 est dans le train
+___6/6/2019__:__14:1:53___
+Le client n°235 fait la queue au guichet de la gare Austerlitz
+Le client n°235 paye son billet 9€
+Le client n°235 a payé son billet
+Le client n°235 est dans le train
+___6/6/2019__:__14:5:21___
+Le client n°236 fait la queue au guichet de la gare Austerlitz
+Le client n°236 paye son billet 1034€
+Le client n°236 a payé son billet
+Le client n°236 est dans le train
+___6/6/2019__:__14:8:47___
+Le client n°237 fait la queue au guichet de la gare Austerlitz
+Le client n°237 paye son billet 1795€
+Le client n°237 a payé son billet
+Le client n°237 est dans le train
+___6/6/2019__:__14:12:18___
+Le client n°238 fait la queue au guichet de la gare Austerlitz
+Le client n°238 paye son billet 2499€
+Le client n°238 a payé son billet
+Le client n°238 est dans le train
+___6/6/2019__:__14:15:54___
+Le client n°239 fait la queue au guichet de la gare Austerlitz
+Le client n°239 paye son billet 701€
+Le client n°239 a payé son billet
+Le client n°239 est dans le train
+___6/6/2019__:__14:19:29___
+Le client n°240 fait la queue au guichet de la gare Austerlitz
+Le client n°240 paye son billet 2026€
+Le client n°240 a payé son billet
+Le client n°240 est dans le train
+___6/6/2019__:__14:22:52___
+Le client n°241 fait la queue au guichet de la gare Austerlitz
+Le client n°241 paye son billet 1448€
+Le client n°241 a payé son billet
+Le client n°241 est dans le train
+___6/6/2019__:__14:27:44___
+Le client n°242 fait la queue au guichet de la gare Austerlitz
+Le client n°242 paye son billet 1445€
+Le client n°242 a payé son billet
+Le client n°242 est dans le train
+___6/6/2019__:__14:31:52___
+Le client n°243 fait la queue au guichet de la gare Austerlitz
+Le client n°243 paye son billet 914€
+Le client n°243 a payé son billet
+Le client n°243 est dans le train
+___6/6/2019__:__14:35:24___
+Le client n°244 fait la queue au guichet de la gare Austerlitz
+Le client n°244 paye son billet 2136€
+Le client n°244 a payé son billet
+Le client n°244 est dans le train
+___6/6/2019__:__14:39:16___
+Le client n°245 fait la queue au guichet de la gare Austerlitz
+Le client n°245 paye son billet 547€
+Le client n°245 a payé son billet
+Le client n°245 est dans le train
+___6/6/2019__:__14:44:59___
+Le client n°246 fait la queue au guichet de la gare Austerlitz
+Le client n°246 paye son billet 1865€
+Le client n°246 a payé son billet
+Le client n°246 est dans le train
+___6/6/2019__:__14:48:46___
+Le client n°247 fait la queue au guichet de la gare Austerlitz
+Le client n°247 paye son billet 122€
+Le client n°247 a payé son billet
+Le client n°247 est dans le train
+___6/6/2019__:__14:52:10___
+Le client n°248 fait la queue au guichet de la gare Austerlitz
+Le client n°248 paye son billet 1241€
+Le client n°248 a payé son billet
+Le client n°248 est dans le train
+___6/6/2019__:__14:55:47___
+Le client n°249 fait la queue au guichet de la gare Austerlitz
+Le client n°249 paye son billet 2087€
+Le client n°249 a payé son billet
+Le client n°249 est dans le train
+___6/6/2019__:__14:59:12___
+Le client n°250 fait la queue au guichet de la gare Austerlitz
+Le client n°250 paye son billet 2021€
+Le client n°250 a payé son billet
+Le client n°250 est dans le train
+___6/6/2019__:__15:2:40___
+Le client n°251 fait la queue au guichet de la gare Austerlitz
+Le client n°251 paye son billet 1912€
+Le client n°251 a payé son billet
+Le client n°251 est dans le train
+___6/6/2019__:__15:6:3___
+Le client n°252 fait la queue au guichet de la gare Austerlitz
+Le client n°252 paye son billet 1041€
+Le client n°252 a payé son billet
+Le client n°252 est dans le train
+___6/6/2019__:__15:9:31___
+Le client n°253 fait la queue au guichet de la gare Austerlitz
+Le client n°253 paye son billet 553€
+Le client n°253 a payé son billet
+Le client n°253 est dans le train
+___6/6/2019__:__15:13:11___
+Le client n°254 fait la queue au guichet de la gare Austerlitz
+Le client n°254 paye son billet 1827€
+Le client n°254 a payé son billet
+Le client n°254 est dans le train
+___6/6/2019__:__15:16:40___
+Le client n°255 fait la queue au guichet de la gare Austerlitz
+Le client n°255 paye son billet 1881€
+Le client n°255 a payé son billet
+Le client n°255 est dans le train
+___6/6/2019__:__15:20:8___
+Le client n°256 fait la queue au guichet de la gare Austerlitz
+Le client n°256 paye son billet 2192€
+Le client n°256 a payé son billet
+Le client n°256 est dans le train
+___6/6/2019__:__15:23:34___
+Le client n°257 fait la queue au guichet de la gare Austerlitz
+Le client n°257 paye son billet 985€
+Le client n°257 a payé son billet
+Le client n°257 est dans le train
+___6/6/2019__:__15:26:58___
+Le client n°258 fait la queue au guichet de la gare Austerlitz
+Le client n°258 paye son billet 2221€
+Le client n°258 a payé son billet
+Le client n°258 est dans le train
+___6/6/2019__:__15:30:24___
+Le client n°259 fait la queue au guichet de la gare Austerlitz
+Le client n°259 paye son billet 606€
+Le client n°259 a payé son billet
+Le client n°259 est dans le train
+___6/6/2019__:__15:33:48___
+Le client n°260 fait la queue au guichet de la gare Austerlitz
+Le client n°260 paye son billet 2762€
+Le client n°260 a payé son billet
+Le client n°260 est dans le train
+___6/6/2019__:__15:37:13___
+Le client n°261 fait la queue au guichet de la gare Austerlitz
+Le client n°261 paye son billet 2054€
+Le client n°261 a payé son billet
+Le client n°261 est dans le train
+___6/6/2019__:__15:40:40___
+Le client n°262 fait la queue au guichet de la gare Austerlitz
+Le client n°262 paye son billet 1959€
+Le client n°262 a payé son billet
+Le client n°262 est dans le train
+___6/6/2019__:__15:44:6___
+Le client n°263 fait la queue au guichet de la gare Austerlitz
+Le client n°263 paye son billet 771€
+Le client n°263 a payé son billet
+Le client n°263 est dans le train
+___6/6/2019__:__15:47:29___
+Le client n°264 fait la queue au guichet de la gare Austerlitz
+Le client n°264 paye son billet 1597€
+Le client n°264 a payé son billet
+Le client n°264 est dans le train
+___6/6/2019__:__15:50:59___
+Le client n°265 fait la queue au guichet de la gare Austerlitz
+Le client n°265 paye son billet 262€
+Le client n°265 a payé son billet
+Le client n°265 est dans le train
+___6/6/2019__:__15:54:22___
+Le client n°266 fait la queue au guichet de la gare Austerlitz
+Le client n°266 paye son billet 781€
+Le client n°266 a payé son billet
+Le client n°266 est dans le train
+___6/6/2019__:__15:58:12___
+Le client n°267 fait la queue au guichet de la gare Austerlitz
+Le client n°267 paye son billet 2632€
+Le client n°267 a payé son billet
+Le client n°267 est dans le train
+___6/6/2019__:__16:1:54___
+Le client n°268 fait la queue au guichet de la gare Austerlitz
+Le client n°268 paye son billet 2058€
+Le client n°268 a payé son billet
+Le client n°268 est dans le train
+___6/6/2019__:__16:5:25___
+Le client n°269 fait la queue au guichet de la gare Austerlitz
+Le client n°269 paye son billet 281€
+Le client n°269 a payé son billet
+Le client n°269 est dans le train
+___6/6/2019__:__16:8:54___
+Le client n°270 fait la queue au guichet de la gare Austerlitz
+Le client n°270 paye son billet 333€
+Le client n°270 a payé son billet
+Le client n°270 est dans le train
+___6/6/2019__:__16:12:21___
+Le client n°271 fait la queue au guichet de la gare Austerlitz
+Le client n°271 paye son billet 1084€
+Le client n°271 a payé son billet
+Le client n°271 est dans le train
+___6/6/2019__:__16:15:48___
+Le client n°272 fait la queue au guichet de la gare Austerlitz
+Le client n°272 paye son billet 1730€
+Le client n°272 a payé son billet
+Le client n°272 est dans le train
+___6/6/2019__:__16:19:42___
+Le client n°273 fait la queue au guichet de la gare Austerlitz
+Le client n°273 paye son billet 1779€
+Le client n°273 a payé son billet
+Le client n°273 est dans le train
+___6/6/2019__:__16:23:10___
+Le client n°274 fait la queue au guichet de la gare Austerlitz
+Le client n°274 paye son billet 1999€
+Le client n°274 a payé son billet
+Le client n°274 est dans le train
+___6/6/2019__:__16:27:8___
+Le client n°275 fait la queue au guichet de la gare Austerlitz
+Le client n°275 paye son billet 866€
+Le client n°275 a payé son billet
+Le client n°275 est dans le train
+___6/6/2019__:__16:30:34___
+Le client n°276 fait la queue au guichet de la gare Austerlitz
+Le client n°276 paye son billet 2327€
+Le client n°276 a payé son billet
+Le client n°276 est dans le train
+___6/6/2019__:__16:34:2___
+Le client n°277 fait la queue au guichet de la gare Austerlitz
+Le client n°277 paye son billet 865€
+Le client n°277 a payé son billet
+Le client n°277 est dans le train
+___6/6/2019__:__16:37:38___
+Le client n°278 fait la queue au guichet de la gare Austerlitz
+Le client n°278 paye son billet 988€
+Le client n°278 a payé son billet
+Le client n°278 est dans le train
+___6/6/2019__:__16:41:9___
+Le client n°279 fait la queue au guichet de la gare Austerlitz
+Le client n°279 paye son billet 569€
+Le client n°279 a payé son billet
+Le client n°279 est dans le train
+___6/6/2019__:__16:44:47___
+Le client n°280 fait la queue au guichet de la gare Austerlitz
+Le client n°280 paye son billet 2953€
+Le client n°280 a payé son billet
+Le client n°280 est dans le train
+___6/6/2019__:__16:52:50___
+Le client n°281 fait la queue au guichet de la gare Austerlitz
+Le client n°281 paye son billet 10€
+Le client n°281 a payé son billet
+Le client n°281 est dans le train
+___6/6/2019__:__16:56:13___
+Le client n°282 fait la queue au guichet de la gare Austerlitz
+Le client n°282 paye son billet 2482€
+Le client n°282 a payé son billet
+Le client n°282 est dans le train
+___6/6/2019__:__16:59:39___
+Le client n°283 fait la queue au guichet de la gare Austerlitz
+Le client n°283 paye son billet 994€
+Le client n°283 a payé son billet
+Le client n°283 est dans le train
+___6/6/2019__:__17:3:26___
+Le client n°284 fait la queue au guichet de la gare Austerlitz
+Le client n°284 paye son billet 564€
+Le client n°284 a payé son billet
+Le client n°284 est dans le train
+___6/6/2019__:__17:9:51___
+Le client n°285 fait la queue au guichet de la gare Austerlitz
+Le client n°285 paye son billet 1309€
+Le client n°285 a payé son billet
+Le client n°285 est dans le train
+___6/6/2019__:__17:13:14___
+Le client n°286 fait la queue au guichet de la gare Austerlitz
+Le client n°286 paye son billet 2875€
+Le client n°286 a payé son billet
+Le client n°286 est dans le train
+___6/6/2019__:__17:16:39___
+Le client n°287 fait la queue au guichet de la gare Austerlitz
+Le client n°287 paye son billet 2756€
+Le client n°287 a payé son billet
+Le client n°287 est dans le train
+___6/6/2019__:__17:20:9___
+Le client n°288 fait la queue au guichet de la gare Austerlitz
+Le client n°288 paye son billet 2294€
+Le client n°288 a payé son billet
+Le client n°288 est dans le train
+___6/6/2019__:__17:23:34___
+Le client n°289 fait la queue au guichet de la gare Austerlitz
+Le client n°289 paye son billet 2097€
+Le client n°289 a payé son billet
+Le client n°289 est dans le train
+___6/6/2019__:__17:26:59___
+Le client n°290 fait la queue au guichet de la gare Austerlitz
+Le client n°290 paye son billet 363€
+Le client n°290 a payé son billet
+Le client n°290 est dans le train
+___6/6/2019__:__17:30:27___
+Le client n°291 fait la queue au guichet de la gare Austerlitz
+Le client n°291 paye son billet 2057€
+Le client n°291 a payé son billet
+Le client n°291 est dans le train
+___6/6/2019__:__17:33:56___
+Le client n°292 fait la queue au guichet de la gare Austerlitz
+Le client n°292 paye son billet 1151€
+Le client n°292 a payé son billet
+Le client n°292 est dans le train
+___6/6/2019__:__17:37:22___
+Le client n°293 fait la queue au guichet de la gare Austerlitz
+Le client n°293 paye son billet 2322€
+Le client n°293 a payé son billet
+Le client n°293 est dans le train
+___6/6/2019__:__17:40:59___
+Le client n°294 fait la queue au guichet de la gare Austerlitz
+Le client n°294 paye son billet 2829€
+Le client n°294 a payé son billet
+Le client n°294 est dans le train
+___6/6/2019__:__17:44:39___
+Le client n°295 fait la queue au guichet de la gare Austerlitz
+Le client n°295 paye son billet 2748€
+Le client n°295 a payé son billet
+Le client n°295 est dans le train
+___6/6/2019__:__17:48:9___
+Le client n°296 fait la queue au guichet de la gare Austerlitz
+Le client n°296 paye son billet 2585€
+Le client n°296 a payé son billet
+Le client n°296 est dans le train
+___6/6/2019__:__17:51:40___
+Le client n°297 fait la queue au guichet de la gare Austerlitz
+Le client n°297 paye son billet 610€
+Le client n°297 a payé son billet
+Le client n°297 est dans le train
+___6/6/2019__:__17:55:9___
+Le client n°298 fait la queue au guichet de la gare Austerlitz
+Le client n°298 paye son billet 2380€
+Le client n°298 a payé son billet
+Le client n°298 est dans le train
+___6/6/2019__:__17:58:33___
+Le client n°299 fait la queue au guichet de la gare Austerlitz
+Le client n°299 paye son billet 1644€
+Le client n°299 a payé son billet
+Le client n°299 est dans le train
+___6/6/2019__:__18:1:55___
+Le client n°300 fait la queue au guichet de la gare Austerlitz
+Le client n°300 paye son billet 891€
+Le client n°300 a payé son billet
+Le client n°300 est dans le train
+___6/6/2019__:__18:5:19___
+Le client n°301 fait la queue au guichet de la gare Austerlitz
+Le client n°301 paye son billet 2714€
+Le client n°301 a payé son billet
+Le client n°301 est dans le train
+___6/6/2019__:__18:8:42___
+Le client n°302 fait la queue au guichet de la gare Austerlitz
+Le client n°302 paye son billet 2728€
+Le client n°302 a payé son billet
+Le client n°302 est dans le train
+___6/6/2019__:__18:12:6___
+Le client n°303 fait la queue au guichet de la gare Austerlitz
+Le client n°303 paye son billet 2621€
+Le client n°303 a payé son billet
+Le client n°303 est dans le train
+___6/6/2019__:__18:15:29___
+Le client n°304 fait la queue au guichet de la gare Austerlitz
+Le client n°304 paye son billet 1494€
+Le client n°304 a payé son billet
+Le client n°304 est dans le train
+___6/6/2019__:__18:19:8___
+Le client n°305 fait la queue au guichet de la gare Austerlitz
+Le client n°305 paye son billet 1728€
+Le client n°305 a payé son billet
+Le client n°305 est dans le train
+___6/6/2019__:__18:22:32___
+Le client n°306 fait la queue au guichet de la gare Austerlitz
+Le client n°306 paye son billet 488€
+Le client n°306 a payé son billet
+Le client n°306 est dans le train
+___6/6/2019__:__18:25:54___
+Le client n°307 fait la queue au guichet de la gare Austerlitz
+Le client n°307 paye son billet 821€
+Le client n°307 a payé son billet
+Le client n°307 est dans le train
+___6/6/2019__:__18:29:18___
+Le client n°308 fait la queue au guichet de la gare Austerlitz
+Le client n°308 paye son billet 2593€
+Le client n°308 a payé son billet
+Le client n°308 est dans le train
+___6/6/2019__:__18:32:42___
+Le client n°309 fait la queue au guichet de la gare Austerlitz
+Le client n°309 paye son billet 1477€
+Le client n°309 a payé son billet
+Le client n°309 est dans le train
+___6/6/2019__:__18:36:22___
+Le client n°310 fait la queue au guichet de la gare Austerlitz
+Le client n°310 paye son billet 1390€
+Le client n°310 a payé son billet
+Le client n°310 est dans le train
+___6/6/2019__:__18:39:58___
+Le client n°311 fait la queue au guichet de la gare Austerlitz
+Le client n°311 paye son billet 2546€
+Le client n°311 a payé son billet
+Le client n°311 est dans le train
+___6/6/2019__:__18:44:1___
+Le client n°312 fait la queue au guichet de la gare Austerlitz
+Le client n°312 paye son billet 1487€
+Le client n°312 a payé son billet
+Le client n°312 est dans le train
+___6/6/2019__:__18:47:37___
+Le client n°313 fait la queue au guichet de la gare Austerlitz
+Le client n°313 paye son billet 873€
+Le client n°313 a payé son billet
+Le client n°313 est dans le train
+___6/6/2019__:__18:50:59___
+Le client n°314 fait la queue au guichet de la gare Austerlitz
+Le client n°314 paye son billet 541€
+Le client n°314 a payé son billet
+Le client n°314 est dans le train
+___6/6/2019__:__18:54:31___
+Le client n°315 fait la queue au guichet de la gare Austerlitz
+Le client n°315 paye son billet 2052€
+Le client n°315 a payé son billet
+Le client n°315 est dans le train
+___6/6/2019__:__18:57:58___
+Le client n°316 fait la queue au guichet de la gare Austerlitz
+Le client n°316 paye son billet 2182€
+Le client n°316 a payé son billet
+Le client n°316 est dans le train
+___6/6/2019__:__19:1:24___
+Le client n°317 fait la queue au guichet de la gare Austerlitz
+Le client n°317 paye son billet 417€
+Le client n°317 a payé son billet
+Le client n°317 est dans le train
+___6/6/2019__:__19:5:39___
+Le client n°318 fait la queue au guichet de la gare Austerlitz
+Le client n°318 paye son billet 1809€
+Le client n°318 a payé son billet
+Le client n°318 est dans le train
+___6/6/2019__:__19:9:11___
+Le client n°319 fait la queue au guichet de la gare Austerlitz
+Le client n°319 paye son billet 1477€
+Le client n°319 a payé son billet
+Le client n°319 est dans le train
+___6/6/2019__:__19:12:55___
+Le client n°320 fait la queue au guichet de la gare Austerlitz
+Le client n°320 paye son billet 2514€
+Le client n°320 a payé son billet
+Le client n°320 est dans le train
+___6/6/2019__:__19:19:58___
+Le client n°321 fait la queue au guichet de la gare Austerlitz
+Le client n°321 paye son billet 2172€
+Le client n°321 a payé son billet
+Le client n°321 est dans le train
+___6/6/2019__:__19:23:23___
+Le client n°322 fait la queue au guichet de la gare Austerlitz
+Le client n°322 paye son billet 534€
+Le client n°322 a payé son billet
+Le client n°322 est dans le train
+___6/6/2019__:__19:27:0___
+Le client n°323 fait la queue au guichet de la gare Austerlitz
+Le client n°323 paye son billet 665€
+Le client n°323 a payé son billet
+Le client n°323 est dans le train
+___6/6/2019__:__19:30:27___
+Le client n°324 fait la queue au guichet de la gare Austerlitz
+Le client n°324 paye son billet 1495€
+Le client n°324 a payé son billet
+Le client n°324 est dans le train
+___6/6/2019__:__19:33:53___
+Le client n°325 fait la queue au guichet de la gare Austerlitz
+Le client n°325 paye son billet 363€
+Le client n°325 a payé son billet
+Le client n°325 est dans le train
+___6/6/2019__:__19:37:19___
+Le client n°326 fait la queue au guichet de la gare Austerlitz
+Le client n°326 paye son billet 414€
+Le client n°326 a payé son billet
+Le client n°326 est dans le train
+___6/6/2019__:__19:40:44___
+Le client n°327 fait la queue au guichet de la gare Austerlitz
+Le client n°327 paye son billet 1081€
+Le client n°327 a payé son billet
+Le client n°327 est dans le train
+___6/6/2019__:__19:48:6___
+Le client n°328 fait la queue au guichet de la gare Austerlitz
+Le client n°328 paye son billet 974€
+Le client n°328 a payé son billet
+Le client n°328 est dans le train
+___6/6/2019__:__19:51:30___
+Le client n°329 fait la queue au guichet de la gare Austerlitz
+Le client n°329 paye son billet 2795€
+Le client n°329 a payé son billet
+Le client n°329 est dans le train
+___6/6/2019__:__19:54:55___
+Le client n°330 fait la queue au guichet de la gare Austerlitz
+Le client n°330 paye son billet 2725€
+Le client n°330 a payé son billet
+Le client n°330 est dans le train
+___6/6/2019__:__19:58:20___
+Le client n°331 fait la queue au guichet de la gare Austerlitz
+Le client n°331 paye son billet 1866€
+Le client n°331 a payé son billet
+Le client n°331 est dans le train
+___6/6/2019__:__20:1:50___
+Le client n°332 fait la queue au guichet de la gare Austerlitz
+Le client n°332 paye son billet 2510€
+Le client n°332 a payé son billet
+Le client n°332 est dans le train
+___6/6/2019__:__20:5:15___
+Le client n°333 fait la queue au guichet de la gare Austerlitz
+Le client n°333 paye son billet 2454€
+Le client n°333 a payé son billet
+Le client n°333 est dans le train
+___6/6/2019__:__20:8:39___
+Le client n°334 fait la queue au guichet de la gare Austerlitz
+Le client n°334 paye son billet 1488€
+Le client n°334 a payé son billet
+Le client n°334 est dans le train
+___6/6/2019__:__20:12:4___
+Le client n°335 fait la queue au guichet de la gare Austerlitz
+Le client n°335 paye son billet 1004€
+Le client n°335 a payé son billet
+Le client n°335 est dans le train
+___6/6/2019__:__20:15:28___
+Le client n°336 fait la queue au guichet de la gare Austerlitz
+Le client n°336 paye son billet 1182€
+Le client n°336 a payé son billet
+Le client n°336 est dans le train
+___6/6/2019__:__20:18:58___
+Le client n°337 fait la queue au guichet de la gare Austerlitz
+Le client n°337 paye son billet 1976€
+Le client n°337 a payé son billet
+Le client n°337 est dans le train
+___6/6/2019__:__20:22:29___
+Le client n°338 fait la queue au guichet de la gare Austerlitz
+Le client n°338 paye son billet 1826€
+Le client n°338 a payé son billet
+Le client n°338 est dans le train
+___6/6/2019__:__20:25:51___
+Le client n°339 fait la queue au guichet de la gare Austerlitz
+Le client n°339 paye son billet 776€
+Le client n°339 a payé son billet
+Le client n°339 est dans le train
+___6/6/2019__:__20:29:13___
+Le client n°340 fait la queue au guichet de la gare Austerlitz
+Le client n°340 paye son billet 453€
+Le client n°340 a payé son billet
+Le client n°340 est dans le train
+___6/6/2019__:__20:32:36___
+Le client n°341 fait la queue au guichet de la gare Austerlitz
+Le client n°341 paye son billet 217€
+Le client n°341 a payé son billet
+Le client n°341 est dans le train
+___6/6/2019__:__20:36:1___
+Le client n°342 fait la queue au guichet de la gare Austerlitz
+Le client n°342 paye son billet 323€
+Le client n°342 a payé son billet
+Le client n°342 est dans le train
+___6/6/2019__:__20:39:25___
+Le client n°343 fait la queue au guichet de la gare Austerlitz
+Le client n°343 paye son billet 1941€
+Le client n°343 a payé son billet
+Le client n°343 est dans le train
+___6/6/2019__:__20:43:15___
+Le client n°344 fait la queue au guichet de la gare Austerlitz
+Le client n°344 paye son billet 1090€
+Le client n°344 a payé son billet
+Le client n°344 est dans le train
+___6/6/2019__:__20:46:49___
+Le client n°345 fait la queue au guichet de la gare Austerlitz
+Le client n°345 paye son billet 864€
+Le client n°345 a payé son billet
+Le client n°345 est dans le train
+___6/6/2019__:__20:50:17___
+Le client n°346 fait la queue au guichet de la gare Austerlitz
+Le client n°346 paye son billet 994€
+Le client n°346 a payé son billet
+Le client n°346 est dans le train
+___6/6/2019__:__20:53:43___
+Le client n°347 fait la queue au guichet de la gare Austerlitz
+Le client n°347 paye son billet 273€
+Le client n°347 a payé son billet
+Le client n°347 est dans le train
+___6/6/2019__:__20:57:13___
+Le client n°348 fait la queue au guichet de la gare Austerlitz
+Le client n°348 paye son billet 1281€
+Le client n°348 a payé son billet
+Le client n°348 est dans le train
+___6/6/2019__:__21:0:43___
+Le client n°349 fait la queue au guichet de la gare Austerlitz
+Le client n°349 paye son billet 2803€
+Le client n°349 a payé son billet
+Le client n°349 est dans le train
+___6/6/2019__:__21:4:13___
+Le client n°350 fait la queue au guichet de la gare Austerlitz
+Le client n°350 paye son billet 1750€
+Le client n°350 a payé son billet
+Le client n°350 est dans le train
+___6/6/2019__:__21:7:41___
+Le client n°351 fait la queue au guichet de la gare Austerlitz
+Le client n°351 paye son billet 796€
+Le client n°351 a payé son billet
+Le client n°351 est dans le train
+___6/6/2019__:__21:11:8___
+Le client n°352 fait la queue au guichet de la gare Austerlitz
+Le client n°352 paye son billet 1976€
+Le client n°352 a payé son billet
+Le client n°352 est dans le train
+___6/6/2019__:__21:14:33___
+Le client n°353 fait la queue au guichet de la gare Austerlitz
+Le client n°353 paye son billet 2285€
+Le client n°353 a payé son billet
+Le client n°353 est dans le train
+___6/6/2019__:__21:17:59___
+Le client n°354 fait la queue au guichet de la gare Austerlitz
+Le client n°354 paye son billet 1462€
+Le client n°354 a payé son billet
+Le client n°354 est dans le train
+___6/6/2019__:__21:21:27___
+Le client n°355 fait la queue au guichet de la gare Austerlitz
+Le client n°355 paye son billet 471€
+Le client n°355 a payé son billet
+Le client n°355 est dans le train
+___6/6/2019__:__21:24:55___
+Le client n°356 fait la queue au guichet de la gare Austerlitz
+Le client n°356 paye son billet 2649€
+Le client n°356 a payé son billet
+Le client n°356 est dans le train
+___6/6/2019__:__21:28:23___
+Le client n°357 fait la queue au guichet de la gare Austerlitz
+Le client n°357 paye son billet 1876€
+Le client n°357 a payé son billet
+Le client n°357 est dans le train
+___6/6/2019__:__21:31:50___
+Le client n°358 fait la queue au guichet de la gare Austerlitz
+Le client n°358 paye son billet 1553€
+Le client n°358 a payé son billet
+Le client n°358 est dans le train
+___6/6/2019__:__21:35:12___
+Le client n°359 fait la queue au guichet de la gare Austerlitz
+Le client n°359 paye son billet 623€
+Le client n°359 a payé son billet
+Le client n°359 est dans le train
+___6/6/2019__:__21:38:38___
+Le client n°360 fait la queue au guichet de la gare Austerlitz
+Le client n°360 paye son billet 1672€
+Le client n°360 a payé son billet
+Le client n°360 est dans le train
+___6/6/2019__:__21:42:5___
+Le client n°361 fait la queue au guichet de la gare Austerlitz
+Le client n°361 paye son billet 1278€
+Le client n°361 a payé son billet
+Le client n°361 est dans le train
+___6/6/2019__:__21:45:39___
+Le client n°362 fait la queue au guichet de la gare Austerlitz
+Le client n°362 paye son billet 2489€
+Le client n°362 a payé son billet
+Le client n°362 est dans le train
+___6/6/2019__:__21:49:6___
+Le client n°363 fait la queue au guichet de la gare Austerlitz
+Le client n°363 paye son billet 1183€
+Le client n°363 a payé son billet
+Le client n°363 est dans le train
+___6/6/2019__:__21:52:32___
+Le client n°364 fait la queue au guichet de la gare Austerlitz
+Le client n°364 paye son billet 732€
+Le client n°364 a payé son billet
+Le client n°364 est dans le train
+___6/6/2019__:__21:56:1___
+Le client n°365 fait la queue au guichet de la gare Austerlitz
+Le client n°365 paye son billet 978€
+Le client n°365 a payé son billet
+Le client n°365 est dans le train
+___6/6/2019__:__21:59:29___
+Le client n°366 fait la queue au guichet de la gare Austerlitz
+Le client n°366 paye son billet 2188€
+Le client n°366 a payé son billet
+Le client n°366 est dans le train
+___6/6/2019__:__22:2:56___
+Le client n°367 fait la queue au guichet de la gare Austerlitz
+Le client n°367 paye son billet 1915€
+Le client n°367 a payé son billet
+Le client n°367 est dans le train
+___6/6/2019__:__22:6:23___
+Le client n°368 fait la queue au guichet de la gare Austerlitz
+Le client n°368 paye son billet 2954€
+Le client n°368 a payé son billet
+Le client n°368 est dans le train
+___6/6/2019__:__22:9:53___
+Le client n°369 fait la queue au guichet de la gare Austerlitz
+Le client n°369 paye son billet 1014€
+Le client n°369 a payé son billet
+Le client n°369 est dans le train
+___6/6/2019__:__22:13:34___
+Le client n°370 fait la queue au guichet de la gare Austerlitz
+Le client n°370 paye son billet 2692€
+Le client n°370 a payé son billet
+Le client n°370 est dans le train
+___6/6/2019__:__22:16:58___
+Le client n°371 fait la queue au guichet de la gare Austerlitz
+Le client n°371 paye son billet 408€
+Le client n°371 a payé son billet
+Le client n°371 est dans le train
+___6/6/2019__:__22:20:24___
+Le client n°372 fait la queue au guichet de la gare Austerlitz
+Le client n°372 paye son billet 1232€
+Le client n°372 a payé son billet
+Le client n°372 est dans le train
+___6/6/2019__:__22:23:52___
+Le client n°373 fait la queue au guichet de la gare Austerlitz
+Le client n°373 paye son billet 16€
+Le client n°373 a payé son billet
+Le client n°373 est dans le train
+___6/6/2019__:__22:27:22___
+Le client n°374 fait la queue au guichet de la gare Austerlitz
+Le client n°374 paye son billet 2349€
+Le client n°374 a payé son billet
+Le client n°374 est dans le train
+___6/6/2019__:__22:30:49___
+Le client n°375 fait la queue au guichet de la gare Austerlitz
+Le client n°375 paye son billet 2323€
+Le client n°375 a payé son billet
+Le client n°375 est dans le train
+___6/6/2019__:__22:34:23___
+Le client n°376 fait la queue au guichet de la gare Austerlitz
+Le client n°376 paye son billet 881€
+Le client n°376 a payé son billet
+Le client n°376 est dans le train
+___6/6/2019__:__22:37:50___
+Le client n°377 fait la queue au guichet de la gare Austerlitz
+Le client n°377 paye son billet 344€
+Le client n°377 a payé son billet
+Le client n°377 est dans le train
+___6/6/2019__:__22:41:18___
+Le client n°378 fait la queue au guichet de la gare Austerlitz
+Le client n°378 paye son billet 2596€
+Le client n°378 a payé son billet
+Le client n°378 est dans le train
+___6/6/2019__:__22:44:45___
+Le client n°379 fait la queue au guichet de la gare Austerlitz
+Le client n°379 paye son billet 2163€
+Le client n°379 a payé son billet
+Le client n°379 est dans le train
+___6/6/2019__:__22:48:8___
+Le client n°380 fait la queue au guichet de la gare Austerlitz
+Le client n°380 paye son billet 147€
+Le client n°380 a payé son billet
+Le client n°380 est dans le train
+___6/6/2019__:__22:51:46___
+Le client n°381 fait la queue au guichet de la gare Austerlitz
+Le client n°381 paye son billet 1347€
+Le client n°381 a payé son billet
+Le client n°381 est dans le train
+___6/6/2019__:__22:55:12___
+Le client n°382 fait la queue au guichet de la gare Austerlitz
+Le client n°382 paye son billet 2959€
+Le client n°382 a payé son billet
+Le client n°382 est dans le train
+___6/6/2019__:__22:58:34___
+Le client n°383 fait la queue au guichet de la gare Austerlitz
+Le client n°383 paye son billet 2123€
+Le client n°383 a payé son billet
+Le client n°383 est dans le train
+___6/6/2019__:__23:2:1___
+Le client n°384 fait la queue au guichet de la gare Austerlitz
+Le client n°384 paye son billet 632€
+Le client n°384 a payé son billet
+Le client n°384 est dans le train
+___6/6/2019__:__23:5:26___
+Le client n°385 fait la queue au guichet de la gare Austerlitz
+Le client n°385 paye son billet 1421€
+Le client n°385 a payé son billet
+Le client n°385 est dans le train
+___6/6/2019__:__23:8:54___
+Le client n°386 fait la queue au guichet de la gare Austerlitz
+Le client n°386 paye son billet 2595€
+Le client n°386 a payé son billet
+Le client n°386 est dans le train
+___6/6/2019__:__23:12:21___
+Le client n°387 fait la queue au guichet de la gare Austerlitz
+Le client n°387 paye son billet 281€
+Le client n°387 a payé son billet
+Le client n°387 est dans le train
+___6/6/2019__:__23:15:49___
+Le client n°388 fait la queue au guichet de la gare Austerlitz
+Le client n°388 paye son billet 298€
+Le client n°388 a payé son billet
+Le client n°388 est dans le train
+___6/6/2019__:__23:22:43___
+Le client n°389 fait la queue au guichet de la gare Austerlitz
+Le client n°389 paye son billet 1148€
+Le client n°389 a payé son billet
+Le client n°389 est dans le train
+___6/6/2019__:__23:26:9___
+Le client n°390 fait la queue au guichet de la gare Austerlitz
+Le client n°390 paye son billet 905€
+Le client n°390 a payé son billet
+Le client n°390 est dans le train
+___6/6/2019__:__23:34:10___
+Le client n°391 fait la queue au guichet de la gare Austerlitz
+Le client n°391 paye son billet 1971€
+Le client n°391 a payé son billet
+Le client n°391 est dans le train
+___6/6/2019__:__23:37:36___
+Le client n°392 fait la queue au guichet de la gare Austerlitz
+Le client n°392 paye son billet 2427€
+Le client n°392 a payé son billet
+Le client n°392 est dans le train
+___6/6/2019__:__23:41:1___
+Le client n°393 fait la queue au guichet de la gare Austerlitz
+Le client n°393 paye son billet 395€
+Le client n°393 a payé son billet
+Le client n°393 est dans le train
+___6/6/2019__:__23:44:25___
+Le client n°394 fait la queue au guichet de la gare Austerlitz
+Le client n°394 paye son billet 154€
+Le client n°394 a payé son billet
+Le client n°394 est dans le train
+___6/6/2019__:__23:47:51___
+Le client n°395 fait la queue au guichet de la gare Austerlitz
+Le client n°395 paye son billet 160€
+Le client n°395 a payé son billet
+Le client n°395 est dans le train
+___6/6/2019__:__23:51:20___
+Le client n°396 fait la queue au guichet de la gare Austerlitz
+Le client n°396 paye son billet 1373€
+Le client n°396 a payé son billet
+Le client n°396 est dans le train
+___6/6/2019__:__23:54:57___
+Le client n°397 fait la queue au guichet de la gare Austerlitz
+Le client n°397 paye son billet 2342€
+Le client n°397 a payé son billet
+Le client n°397 est dans le train
+___6/6/2019__:__23:58:22___
+Le client n°398 fait la queue au guichet de la gare Austerlitz
+Le client n°398 paye son billet 2076€
+Le client n°398 a payé son billet
+Le client n°398 est dans le train
