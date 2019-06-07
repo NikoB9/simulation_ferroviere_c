@@ -265,7 +265,6 @@ int main(int argc, char** argv)
     TrainsLigne5[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
 
     printf("%s\n", TrainsLigne1[i].numero);
-    Trains[i]=(train){(char *)randomNomTrainGlobal,0};
   }
 
   //Création des lignes pour remplir la map du réseau ferrovier 
