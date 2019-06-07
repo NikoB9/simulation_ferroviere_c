@@ -164,7 +164,7 @@ void afficheTemps(double diff){
 **************************************************************/
 double nbAleatoire(double deb, double fin){
 
-  return ( rand()/(double)RAND_MAX ) * (fin-deb) + deb;
+  return (rand()/(double)RAND_MAX ) * (fin-deb) + deb;
 
 }
 
@@ -173,20 +173,18 @@ double nbAleatoire(double deb, double fin){
 **Inputs : 
 **Ouputs : nombre aléatoire entier sous forme de chaine de caractère de taille 6
 **************************************************************/
-char *numTrainRandom(){
-  char temp[6];
+char randomNomTrainGlobal[6];
+void numTrainRandom(){
   int i =0;
   for (int i = 0; i < 6; ++i)
   {
     // (char)rand()%9 => une valeur en code ascii compris entre 0 et 9 entière
     char tempChar = ('0'+(char)(rand()%9));
-    temp[i]=tempChar;
+    randomNomTrainGlobal[i]=tempChar;
   }
-  printf("%s\n",temp );
-  return temp;
 }
 
-
+ 
 /*************************************************************
 ** file d'attente des passagers à la billeterie
 **************************************************************/
@@ -249,15 +247,14 @@ int main(int argc, char** argv)
   }
 
   //Création des lignes 
-  train Trains[10];
-  for (int i = 0; i < 10; ++i)
+  train Trains[25];
+  for (int i = 0; i < 25; ++i)
   {
-    //Trains[i]=(train){numTrainRandom(),0};
-    //908934 est un code arbitraire pour ne pas utiliser
-    //la fonction numTrainRandom pour le moment qui sort une erreur
-    //Erreur Segmentation 
-    Trains[i]=(train){"908934",0};
-    printf("%s\n", Trains[i].numero);
+    //Mise à jour de la variable globale randomNomTrainGlobal 
+    //Qui contient le char nomTrain
+    numTrainRandom();
+    //Récupération du nom généré via variable globale
+    Trains[i]=(train){(char *)randomNomTrainGlobal,0};
   }
 
   //Création de gare 
