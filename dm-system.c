@@ -8,11 +8,11 @@
 
 //temps de pause
 //1 minutes par personne
-#define PASSAGE_GUICHET 1.66
+#define PASSAGE_GUICHET 1.
 //1 minutes par personne
-#define TEMPS_MONTEE_TRAIN 1.66
+#define TEMPS_MONTEE_TRAIN 1.
 //10 minutes
-#define TRAIN_EN_GARE 10.6
+#define TRAIN_EN_GARE 10.
 //Pour simplifier 1minute de simulation équivaut à 24h de la vrai vie
 //donc 1 minutes simulée vaut 1/(24*60) minute de la vie réelle
 #define RATIO_MINUTE 1./(24*60)
@@ -22,6 +22,10 @@ struct train
 {
   char *numero;
   int nbPassagers;
+  int nombrePlaces;
+  int gareActuelle;
+  //1 si trajet alle 0 si retour
+  int alle;
 };
 
 typedef struct gare gare;
@@ -30,15 +34,15 @@ struct gare
   char *nom;
   double recette;
   int nbVoyageurs;
+  int nombreGuichets;
 };
 
 typedef struct ligne ligne;
 struct ligne
 {
   char *nom;
-  int nbVoyageurs;
-  train listeTrain[5];
-  gare listeGare[];
+  train trains[5];
+  gare gares[];
 };
 
 
@@ -47,11 +51,12 @@ struct voyageur
 {
   int identifiantClient;
   gare derniereGareDePassage;
-  gare listeDeGarePassage[];
+  gare garesDePassage[];
 };
 
 
-//on part du ptinciper qu"il y a 20 guichet dans chaque gare
+//Sémaphores pour limiter les accès
+//les montées descentes de trains, les guichets, les tunnels...
 sem_t semaphoreGuichet;
 
 /*time_t debut, fin;
@@ -64,7 +69,7 @@ double debutMicrosecondes;
 
 
 /*************************************************************
-**  
+**  CREATION DE LA MAP
 **************************************************************/
 
 //Tableau de noms de Gares 
@@ -82,10 +87,7 @@ char *nomGare[] =
   "Marseille",
   "Montpellier",
   "Roissy",
-  "Orsay",
-  "Antony",
   "Nice",
-  "Sucy-en-Brie",
   "Bordeaux",
   "Caen",
   "Rouen",
@@ -94,8 +96,6 @@ char *nomGare[] =
   "Strasbourg",
   "Avignon",
   "Adainville",
-  "Versailles",
-  "Bourg-la-Reine",
   "Saint-Rémy-Les-Chebreuses",
   "Saint-Brieuc",
   "La Rochelle",
@@ -103,7 +103,7 @@ char *nomGare[] =
   "Gap"
 };
 
-
+ 
 /*Renvoie en long le Temps en microseconds */
 long double getMicrotime(){
   struct timeval currentTime;
@@ -214,11 +214,6 @@ void*  payerBillet (void* infos) {
   //Faire une fonction pour comptabiliser le nombre de passager dans le train
   printf("Le client n°%s est dans le train\n", numclient);
 
-  //time(&fin);
-  //printf("%f secondes \n", difftime(fin, debut));
-  /*finish = clock();*/
-  //duration= (double)(finish - start) / CLOCKS_PER_SEC;
-  /*duration = difftime(clock(), start); */
 
   //Recuperation de la duree en secondes 
   duration=(getMicrotime()-debutMicrosecondes)/1000000;
@@ -236,34 +231,53 @@ int main(int argc, char** argv)
   //Initialiation de l'horloge
   debutMicrosecondes=getMicrotime();
 
-  //Initialisation Gare 
-  gare Gares[30];
+   //Initialisation Gare 
+  gare GaresLigne1[5];
+  gare GaresLigne2[5];
+  gare GaresLigne3[5];
+  gare GaresLigne4[5];
+  gare GaresLigne5[5];
   int i;
-  for(i=0; i<30; i++){
+  for(i=0; i<5; i++){
     //Remplissage des noms de Gare 
     //avec nom prédéfinis dans nomGare[], 
-    //une recette à 0.0 et un nombre de Passager à 0 
-     Gares[i] = (gare) {nomGare[i],0.0,0};
+    //une recette à 0.0 et un nombre de Voyageurs à 0 
+    //entre 5 et 20 guichets
+     GaresLigne1[i] = (gare) {nomGare[i], 0.0, 0, nbAleatoire(5, 20)};
+     GaresLigne2[i] = (gare) {nomGare[i+5],0.0, nbAleatoire(5, 20)};
+     GaresLigne3[i] = (gare) {nomGare[i+10],0.0, nbAleatoire(5, 20)};
+     GaresLigne4[i] = (gare) {nomGare[i+15],0.0,15, nbAleatoire(5, 20)};
+     GaresLigne5[i] = (gare) {nomGare[i+20],0.0,8, nbAleatoire(5, 20)};
   }
 
-  //Création des lignes 
-  train Trains[25];
-  for (int i = 0; i < 25; ++i)
+  //Création des trains
+  train TrainsLigne1[5];
+  train TrainsLigne2[5];
+  train TrainsLigne3[5];
+  train TrainsLigne4[5];
+  train TrainsLigne5[5];
+  for (int i = 0; i < 5; ++i)
   {
-    //Mise à jour de la variable globale randomNomTrainGlobal 
-    //Qui contient le char nomTrain
-    numTrainRandom();
-    //Récupération du nom généré via variable globale
+    TrainsLigne1[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
+    TrainsLigne2[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
+    TrainsLigne3[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
+    TrainsLigne4[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
+    TrainsLigne5[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
+
+    printf("%s\n", TrainsLigne1[i].numero);
     Trains[i]=(train){(char *)randomNomTrainGlobal,0};
   }
 
-  //Création de gare 
+  //Création des lignes pour remplir la map du réseau ferrovier 
   ligne Lignes[5];
-  for (int i = 0; i < 5; ++i)
-  {
-    //TODO : Implémenter l'init des lignes 
-    /*Lignes[i] = (ligne) {};*/
-  }
+  Lignes[0] = (ligne) {"Frisson", TrainsLigne1, GaresLigne1};
+  Lignes[1] = (ligne) {"Magie", TrainsLigne2, GaresLigne2};
+  Lignes[2] = (ligne) {"Grand tour",TrainsLigne3, GaresLigne3};
+  Lignes[3] = (ligne) {"La citadine", TrainsLigne4, GaresLigne4};
+  Lignes[4] = (ligne) {"La paysanne", TrainsLigne5, GaresLigne5};
+
+
+
 
 
   if( argc == 4 )
@@ -274,48 +288,86 @@ int main(int argc, char** argv)
     int montantMin = atoi(argv[2]);
     int montantMax = atoi(argv[3]);
     printf("%d passagers voyagerons aujourd'hui, le montant minimum d'un billet sera de %d€ et le montant maximum de %d€.\n", nbrePassagers, montantMin, montantMax);
-    printf("%f\n", ratioMinsEnMs(PASSAGE_GUICHET));
-    printf("%f\n",ratioMinsEnMs(TEMPS_MONTEE_TRAIN));
-
-    //elements importants
-    int nombrePlaces = 150;
-    int nombreGuichets = 20;
+    //printf("%f\n", ratioMinsEnMs(PASSAGE_GUICHET));
+    //printf("%f\n",ratioMinsEnMs(TEMPS_MONTEE_TRAIN));
 
 
-    //test sur une gare
+    int nbPassagersGare1a24 = nbrePassagers / 25;
+    int nbPassagersGare25 = nbrePassagers % 25;
+    int gareNum = 0;
 
-    pthread_t gare1;
-    char* infoThread[2] = {"Austerlitz", "0"};
-    void *result;
-
-
-    //nombre de guichet de la gare
-    sem_init(&semaphoreGuichet, 0, nombreGuichets);
-
-    //on fait payer et embarquer les passagers
-    for(int numPassager = 0; numPassager < nbrePassagers; numPassager++){
-
-      char str[12];
+    for (int ligneI = 0; ligneI < 5; ++ligneI)
+    {
       
-      sprintf(str, "%d", numPassager);
-
-      infoThread[1] = str; 
-
-      //printf("gare : %s numPassager : %s \n", infoThread[0], infoThread[1]);
-
-      if (pthread_create(&gare1, NULL, payerBillet, &infoThread))
+      for (int gareI = 0; gareI < 5; ++gareI)
       {
-        perror("pthread_create");
-        exit(EXIT_FAILURE);
-      }
-      if (pthread_join(gare1, &result))
-      {
-        perror("pthread_join");
-        exit(EXIT_FAILURE);
-      }
 
+        //nombre de passager à envoyer dans chaque gare
+        int nbPassagers;
+        if (gareNum != 25)
+        {
+          nbPassagers = nbPassagersGare1a24;
+          gareNum += 1;
+        }
+        else{
+          nbPassagers = nbPassagersGare25;
+        }
+
+        /***********
+**
+**
+*
+*
+*
+**CREER DES VOYAGEURS AVEC UN NUMERO ET UNE CAGNOTTE
+*
+*
+*
+**
+**
+        *********/
+        
+
+          //nombre de guichet de la gare
+          sem_init(&semaphoreGuichet, 0, Lignes[ligneI].gares[gareI].nombreGuichets);
+
+          //on fait payer et embarquer les passagers
+          for(int numPassager = 0; numPassager < nbPassagers; numPassager++){
+
+
+            char* infoThread[2] = {"",""};
+            void* result;
+
+            infoThread[0] = Lignes[ligneI].gares[gareI].nom;
+            char str[12];
+            sprintf(str, "%d", numPassager);
+            infoThread[1] = str; 
+
+            pthread_t gare;
+
+            //printf("gare : %s numPassager : %s \n", infoThread[0], infoThread[1]);
+
+            if (pthread_create(&gare, NULL, payerBillet, &infoThread))
+            {
+              perror("pthread_create");
+              exit(EXIT_FAILURE);
+            }
+            if (pthread_join(gare, &result))
+            {
+              perror("pthread_join");
+              exit(EXIT_FAILURE);
+            }
+
+
+          }
+
+
+      }
 
     }
+
+
+  
 
     printf("\nTous les passagers ont bien payés\n");
     
