@@ -20,14 +20,14 @@
 typedef struct train train;
 struct train
 {
-  char numero[50];
+  char *numero;
   int nbPassagers;
 };
 
 typedef struct gare gare;
 struct gare
 {
-  char nom[50];
+  char *nom;
   double recette;
   int nbVoyageurs;
 };
@@ -35,9 +35,9 @@ struct gare
 typedef struct ligne ligne;
 struct ligne
 {
-  char nom[50];
+  char *nom;
   int nbVoyageurs;
-  train listeTrain[10];
+  train listeTrain[5];
   gare listeGare[];
 };
 
@@ -61,6 +61,48 @@ clock_t start, finish;
 //horloge
 double duration;
 double debutMicrosecondes;
+
+
+/*************************************************************
+**  
+**************************************************************/
+
+//Tableau de noms de Gares 
+char *nomGare[] =
+{
+  "Saint-Lazare",
+  "Montparnasse",
+  "Gare du Nord",
+  "Massy Palaiseau",
+  "Lieusaint",
+  "Lyon Part-dieu",
+  "Nantes",
+  "Angers",
+  "Tours",
+  "Marseille",
+  "Montpellier",
+  "Roissy",
+  "Orsay",
+  "Antony",
+  "Nice",
+  "Sucy-en-Brie",
+  "Bordeaux",
+  "Caen",
+  "Rouen",
+  "Vannes",
+  "Brest",
+  "Strasbourg",
+  "Avignon",
+  "Adainville",
+  "Versailles",
+  "Bourg-la-Reine",
+  "Saint-Rémy-Les-Chebreuses",
+  "Saint-Brieuc",
+  "La Rochelle",
+  "Rennes",
+  "Gap"
+};
+
 
 /*Renvoie en long le Temps en microseconds */
 long double getMicrotime(){
@@ -126,6 +168,24 @@ double nbAleatoire(double deb, double fin){
 
 }
 
+/*************************************************************
+**Génère un char contenant le numéro aléatoire d'un train 
+**Inputs : 
+**Ouputs : nombre aléatoire entier sous forme de chaine de caractère de taille 6
+**************************************************************/
+char *numTrainRandom(){
+  char temp[6];
+  int i =0;
+  for (int i = 0; i < 6; ++i)
+  {
+    // (char)rand()%9 => une valeur en code ascii compris entre 0 et 9 entière
+    char tempChar = ('0'+(char)(rand()%9));
+    temp[i]=tempChar;
+  }
+  printf("%s\n",temp );
+  return temp;
+}
+
 
 /*************************************************************
 ** file d'attente des passagers à la billeterie
@@ -177,6 +237,36 @@ int main(int argc, char** argv)
 {
   //Initialiation de l'horloge
   debutMicrosecondes=getMicrotime();
+
+  //Initialisation Gare 
+  gare Gares[30];
+  int i;
+  for(i=0; i<30; i++){
+    //Remplissage des noms de Gare 
+    //avec nom prédéfinis dans nomGare[], 
+    //une recette à 0.0 et un nombre de Passager à 0 
+     Gares[i] = (gare) {nomGare[i],0.0,0};
+  }
+
+  //Création des lignes 
+  train Trains[10];
+  for (int i = 0; i < 10; ++i)
+  {
+    //Trains[i]=(train){numTrainRandom(),0};
+    //908934 est un code arbitraire pour ne pas utiliser
+    //la fonction numTrainRandom pour le moment qui sort une erreur
+    //Erreur Segmentation 
+    Trains[i]=(train){"908934",0};
+    printf("%s\n", Trains[i].numero);
+  }
+
+  //Création de gare 
+  ligne Lignes[5];
+  for (int i = 0; i < 5; ++i)
+  {
+    //TODO : Implémenter l'init des lignes 
+    /*Lignes[i] = (ligne) {};*/
+  }
 
 
   if( argc == 4 )
@@ -247,7 +337,7 @@ int main(int argc, char** argv)
     sem_destroy(&semaphoreGuichet);
 
 
-   }
+  }
   else if( argc > 4 ){
     printf("Probleme avec arguments passes en params ...\n");
     printf("Il y a %d arguments en trop.\n", argc-4);
