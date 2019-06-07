@@ -247,7 +247,7 @@ int main(int argc, char** argv)
     sem_destroy(&semaphoreGuichet);
 
 
-  }
+   }
   else if( argc > 4 ){
     printf("Probleme avec arguments passes en params ...\n");
     printf("Il y a %d arguments en trop.\n", argc-4);
