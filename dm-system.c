@@ -42,7 +42,7 @@ struct ligne
 {
   char *nom;
   train trains[5];
-  gare gares[];
+  gare gares[5];
 };
 
 
@@ -186,7 +186,48 @@ char* numTrainRandom(){
   return randomNomTrainGlobal;
 }
 
+/*************************************************************
+** affiche l'état du train   
+**Inputs : Train 
+**Ouputs : 
+**************************************************************/
+void trainDisp(train Train){
+  printf("Le Train numero %s a %d passager(s). Il contient %d place(s) et est a la gare %s, sens %s\n", 
+    Train.numero, Train.nbPassagers, Train.nombrePlaces,( Train.gareActuelle!=-1 ? nomGare[Train.gareActuelle] : "--Depot--" ), ((Train.aller==1) ? "aller" : "retour"));
+}
+
+/*************************************************************
+** affiche l'état de la gare    
+**Inputs : Gare 
+**Ouputs : 
+**************************************************************/
+void gareDisp(gare Gare){
+  printf("La gare %s a comme recette %f, %d voyageur et %d guichet(s)\n",Gare.nom, Gare.recette, Gare.nbVoyageurs, Gare.nombreGuichets );
+ }
  
+
+ /*************************************************************
+** affiche l'état d'une ligne     
+**Inputs : Ligne
+**Ouputs : 
+**************************************************************/
+void LigneDisp(ligne Ligne){
+  printf("La ligne %s a les trains suivants : \n",Ligne.nom);
+  for (int i = 0; i < 5; ++i)
+  {
+    printf(" ---> ");
+    trainDisp(Ligne.trains[i]);
+  }
+  printf("et les Gares suivantes : \n");
+  for (int i = 0; i < 5; ++i)
+  {
+    printf(" ---> ");
+    gareDisp(Ligne.gares[i]);
+  }
+
+  }
+
+
 /*************************************************************
 ** file d'attente des passagers à la billeterie
 **************************************************************/
@@ -269,6 +310,8 @@ int main(int argc, char** argv)
 
     printf("%s\n", TrainsLigne1[i].numero);
   }
+  trainDisp(TrainsLigne1[0]);
+  trainDisp(TrainsLigne1[1]);
 
   //Création des lignes pour remplir la map du réseau ferrovier 
   ligne Lignes[5];
@@ -277,6 +320,37 @@ int main(int argc, char** argv)
   Lignes[2] = (ligne){"Grand tour", (train*) TrainsLigne3, (gare*) GaresLigne3};
   Lignes[3] = (ligne){"La citadine", (train*) TrainsLigne4, (gare*) GaresLigne4};
   Lignes[4] = (ligne){"La paysanne", (train*) TrainsLigne5, (gare*) GaresLigne5};
+
+  //Transvaser un tableau dans un tableau ne marche pas 
+  for (int i = 0; i < 5; ++i)
+  {
+    //Ligne[0]
+    Lignes[0].trains[i]=TrainsLigne1[i];
+    Lignes[0].gares[i]=GaresLigne1[i];
+
+    //Ligne[1]
+    Lignes[1].trains[i]=TrainsLigne1[i];
+    Lignes[1].gares[i]=GaresLigne1[i];
+
+    //Ligne[2]
+    Lignes[2].trains[i]=TrainsLigne2[i];
+    Lignes[2].gares[i]=GaresLigne2[i];
+
+    //Ligne[3]
+    Lignes[3].trains[i]=TrainsLigne3[i];
+    Lignes[3].gares[i]=GaresLigne3[i];
+
+    //Ligne[4]
+    Lignes[4].trains[i]=TrainsLigne4[i];
+    Lignes[4].gares[i]=GaresLigne4[i];
+  }
+
+  for (int i = 0; i < 5; ++i)
+  {
+    printf("\n");
+    LigneDisp(Lignes[i]);
+    printf("\n");
+  }
 
 
 
