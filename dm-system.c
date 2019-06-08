@@ -24,8 +24,8 @@ struct train
   int nbPassagers;
   int nombrePlaces;
   int gareActuelle;
-  //1 si trajet alle 0 si retour
-  int alle;
+  //1 si trajet aller 0 si retour
+  int aller;
 };
 
 typedef struct gare gare;
@@ -175,7 +175,6 @@ double nbAleatoire(double deb, double fin){
 **************************************************************/
 char randomNomTrainGlobal[6];
 void numTrainRandom(){
-  int i =0;
   for (int i = 0; i < 6; ++i)
   {
     // (char)rand()%9 => une valeur en code ascii compris entre 0 et 9 entière
@@ -258,11 +257,20 @@ int main(int argc, char** argv)
   train TrainsLigne5[5];
   for (int i = 0; i < 5; ++i)
   {
-    TrainsLigne1[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
-    TrainsLigne2[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
-    TrainsLigne3[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
-    TrainsLigne4[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
-    TrainsLigne5[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
+     /**
+    *STRUCT TRAIN
+    char *numero;
+  int nbPassagers;
+  int nombrePlaces;
+  int gareActuelle;
+  //1 si trajet aller 0 si retour
+  int aller;
+    */
+    TrainsLigne1[i]=(train){(char*) randomNomTrainGlobal, 0, 150,-1, 1};
+    TrainsLigne2[i]=(train){(char*) randomNomTrainGlobal, 0, 150,-1, 1};
+    TrainsLigne3[i]=(train){(char*) randomNomTrainGlobal, 0, 150,-1, 1};
+    TrainsLigne4[i]=(train){(char*) randomNomTrainGlobal, 0, 150,-1, 1};
+    TrainsLigne5[i]=(train){(char*) randomNomTrainGlobal, 0, 150,-1, 1};
 
     printf("%s\n", TrainsLigne1[i].numero);
   }
