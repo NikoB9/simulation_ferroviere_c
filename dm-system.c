@@ -174,13 +174,16 @@ double nbAleatoire(double deb, double fin){
 **Ouputs : nombre aléatoire entier sous forme de chaine de caractère de taille 6
 **************************************************************/
 char randomNomTrainGlobal[6];
-void numTrainRandom(){
+char* numTrainRandom(){
+
   for (int i = 0; i < 6; ++i)
   {
     // (char)rand()%9 => une valeur en code ascii compris entre 0 et 9 entière
     char tempChar = ('0'+(char)(rand()%9));
     randomNomTrainGlobal[i]=tempChar;
   }
+
+  return randomNomTrainGlobal;
 }
 
  
@@ -255,33 +258,25 @@ int main(int argc, char** argv)
   train TrainsLigne3[5];
   train TrainsLigne4[5];
   train TrainsLigne5[5];
-  for (int i = 0; i < 5; ++i)
+  for (int i = 0; i < 5; i++)
   {
-     /**
-    *STRUCT TRAIN
-    char *numero;
-  int nbPassagers;
-  int nombrePlaces;
-  int gareActuelle;
-  //1 si trajet aller 0 si retour
-  int aller;
-    */
-    TrainsLigne1[i]=(train){(char*) randomNomTrainGlobal, 0, 150,-1, 1};
-    TrainsLigne2[i]=(train){(char*) randomNomTrainGlobal, 0, 150,-1, 1};
-    TrainsLigne3[i]=(train){(char*) randomNomTrainGlobal, 0, 150,-1, 1};
-    TrainsLigne4[i]=(train){(char*) randomNomTrainGlobal, 0, 150,-1, 1};
-    TrainsLigne5[i]=(train){(char*) randomNomTrainGlobal, 0, 150,-1, 1};
+
+    TrainsLigne1[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
+    TrainsLigne2[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
+    TrainsLigne3[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
+    TrainsLigne4[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
+    TrainsLigne5[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
 
     printf("%s\n", TrainsLigne1[i].numero);
   }
 
   //Création des lignes pour remplir la map du réseau ferrovier 
   ligne Lignes[5];
-  Lignes[0] = (ligne) {"Frisson", TrainsLigne1, GaresLigne1};
-  Lignes[1] = (ligne) {"Magie", TrainsLigne2, GaresLigne2};
-  Lignes[2] = (ligne) {"Grand tour",TrainsLigne3, GaresLigne3};
-  Lignes[3] = (ligne) {"La citadine", TrainsLigne4, GaresLigne4};
-  Lignes[4] = (ligne) {"La paysanne", TrainsLigne5, GaresLigne5};
+  Lignes[0] = (ligne){"Frisson", (train*) TrainsLigne1, (gare*) GaresLigne1};
+  Lignes[1] = (ligne){"Magie", (train*) TrainsLigne2, (gare*) GaresLigne2};
+  Lignes[2] = (ligne){"Grand tour", (train*) TrainsLigne3, (gare*) GaresLigne3};
+  Lignes[3] = (ligne){"La citadine", (train*) TrainsLigne4, (gare*) GaresLigne4};
+  Lignes[4] = (ligne){"La paysanne", (train*) TrainsLigne5, (gare*) GaresLigne5};
 
 
 
@@ -333,6 +328,11 @@ int main(int argc, char** argv)
 **
 **
         *********/
+
+        gare laGare = (gare) Lignes[0].gares[1];
+
+        printf("nombre de guichets en gare : %s\n", laGare.nombreGuichets);
+        printf("nom gare : %s\n", laGare.nom);
         
 
           //nombre de guichet de la gare
