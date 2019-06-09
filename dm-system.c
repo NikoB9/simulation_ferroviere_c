@@ -16,6 +16,7 @@
 //Pour simplifier 1minute de simulation équivaut à 24h de la vrai vie
 //donc 1 minutes simulée vaut 1/(24*60) minute de la vie réelle
 #define RATIO_MINUTE 1./(24*60)
+#define DUREE_DEPLACEMENT_TRAIN_ENTRE_GARE 10.
 
 //bin ne sert à rien... Juste à placer des scanf dans différents endroit du code pour 
 //mettre en pause l'éxécution lors du déboguage
@@ -54,14 +55,23 @@ typedef struct voyageur voyageur;
 struct voyageur
 {
   int identifiantClient;
+  int cagnote;
   gare derniereGareDePassage;
   gare garesDePassage[];
+};
+
+typedef struct contenerTrainGares contenerTrainGares;
+struct contenerTrainGares
+{
+  train* Train;
+  char* idGareDest;
 };
 
 
 //Sémaphores pour limiter les accès
 //les montées descentes de trains, les guichets, les tunnels...
 sem_t semaphoreGuichet;
+sem_t semaphoreGare;
 
 /*time_t debut, fin;
 clock_t start, finish;
@@ -280,6 +290,44 @@ void*  payerBillet (void* infos) {
   pthread_exit(0);
 }
 
+
+
+ /*************************************************************
+** gère les entrées de gares     
+**Inputs : infos => un train et sa prochaine destination de gare en char*
+**Ouputs : 
+**************************************************************/
+void* TrainArriveGare(void* infos)
+{
+  //On suppose que deux trains allant dans 
+  //TODO 
+  //Recup infos 
+  //sem wait
+  //transfert
+  //libération 
+
+  //Récupération des données 
+  contenerTrainGares* contener= (contenerTrainGares*)infos; 
+  train* leTrain = contener->Train;
+  int idGareDest = (int)contener->idGareDest; 
+  
+  //Prise du semaphore 
+  sem_wait(&semaphoreGare);
+
+  //Une fois prise, transfert du train
+  leTrain->gareActuelle=idGareDest;
+  //train à la nouvelle gare 
+
+  //TODO : traitement en gare ICI -----------------------------
+  //descente des passagers 
+  //montee des passagers 
+
+  //Libère le sémaphore  
+  sem_post(&semaphoreGare);
+  usleep(ratioMinsEnMs(DUREE_DEPLACEMENT_TRAIN_ENTRE_GARE));
+  return idGareDest;
+}
+
 int main(int argc, char** argv)
 {
   printf("%s\n\n", "Debut programme." );
@@ -374,9 +422,60 @@ int main(int argc, char** argv)
   
   //scanf("%d",&bin);
 
-
-
   if( argc == 4 )
+  {
+    //Gestion des trains sur la ligne 
+    //initialisation de la semaphore Gare
+    //chaque gare n'a que 2 voies
+    sem_init(&semaphoreGare, 0, 2);
+
+    trainDisp(Lignes[0].trains[0]);
+    //Supposons que la gare de départ est Montparnasse indice 1
+    char* gareName="Bordeaux";
+    int idGareDest=0;
+    for (int i = 0; i < 20; ++i)
+    {
+      if(strcmp(nomGare[i],gareName)==0){
+        idGareDest=i;      
+      }
+      
+    }
+
+    contenerTrainGares contener;
+    contener.idGareDest = idGareDest;
+    contener.Train = &Lignes[0].trains[0];
+    /*printf("Main %d\n",&Lignes[0].trains[0]);
+    printf("Main gare actuelle %d\n",&Lignes[0].trains[0].gareActuelle);*/
+    
+
+    pthread_t gareGestionTrain;
+
+    void* result = pthread_create(&gareGestionTrain, NULL, TrainArriveGare, &contener);
+    if (result)
+    {
+      perror("pthread_create");
+      exit(EXIT_FAILURE);
+    }
+    if (pthread_join(gareGestionTrain, &result))
+    {
+      perror("pthread_join");
+      exit(EXIT_FAILURE);
+    }
+    trainDisp(Lignes[0].trains[0]);
+    //destruction du semaphore
+    sem_destroy(&semaphoreGare);
+    /*for (int i = 0; i < 5; ++i)
+    {
+      //pour chaque gare 
+
+    }*/
+  }
+  
+
+
+
+  //if( argc == 4 ) TO REPLACE 
+  if( argc == 0 )
   {
     //Taille 4 car le premier ne sert à rien 
     //Recupération des données 
