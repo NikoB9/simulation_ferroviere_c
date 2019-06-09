@@ -17,6 +17,10 @@
 //donc 1 minutes simulée vaut 1/(24*60) minute de la vie réelle
 #define RATIO_MINUTE 1./(24*60)
 
+//bin ne sert à rien... Juste à placer des scanf dans différents endroit du code pour 
+//mettre en pause l'éxécution lors du déboguage
+int bin;
+
 typedef struct train train;
 struct train
 {
@@ -355,14 +359,17 @@ int main(int argc, char** argv)
     Lignes[4].gares[i]=GaresLigne4[i];
   }
 
+  printf("----------------------------------  Etat initial du Reseau ferrovier  ----------------------------------\n\n");
   for (int i = 0; i < 5; ++i)
   {
     printf("\n");
     LigneDisp(Lignes[i]);
     printf("\n");
   }
+  printf("\n-------------------------------  Fin de l'affichage du Reseau ferrovier  -------------------------------\n\n");
 
-
+  
+  //scanf("%d",&bin);
 
 
 
@@ -381,7 +388,6 @@ int main(int argc, char** argv)
     int nbPassagersGare1a24 = nbrePassagers / 25;
     int nbPassagersGare25 = nbrePassagers % 25;
     int gareNum = 0;
-
     for (int ligneI = 0; ligneI < 5; ++ligneI)
     {
       
@@ -413,42 +419,46 @@ int main(int argc, char** argv)
 **
         *********/
 
-        gare laGare = (gare) Lignes[0].gares[1];
+        //gare laGare = (gare) Lignes[0].gares[1];  -----<< Pourquoi gares[1] ?? j'ai mis 0 à la place
+        gare laGare = (gare) Lignes[0].gares[0];
 
-        printf("nombre de guichets en gare : %s\n", laGare.nombreGuichets);
+        printf("nombre de guichets en gare : %d\n", laGare.nombreGuichets);
         printf("nom gare : %s\n", laGare.nom);
         
-
-          //nombre de guichet de la gare
-          sem_init(&semaphoreGuichet, 0, Lignes[ligneI].gares[gareI].nombreGuichets);
-
-          //on fait payer et embarquer les passagers
-          for(int numPassager = 0; numPassager < nbPassagers; numPassager++){
+        
+        //scanf("%d",&bin);
 
 
-            char* infoThread[2] = {"",""};
-            void* result;
+        //nombre de guichet de la gare
+        sem_init(&semaphoreGuichet, 0, Lignes[ligneI].gares[gareI].nombreGuichets);
 
-            infoThread[0] = Lignes[ligneI].gares[gareI].nom;
-            char str[12];
-            sprintf(str, "%d", numPassager);
-            infoThread[1] = str; 
+        //on fait payer et embarquer les passagers
+        for(int numPassager = 0; numPassager < nbPassagers; numPassager++){
 
-            pthread_t gare;
 
-            //printf("gare : %s numPassager : %s \n", infoThread[0], infoThread[1]);
+          char* infoThread[2] = {"",""};
+          void* result;
 
-            if (pthread_create(&gare, NULL, payerBillet, &infoThread))
-            {
-              perror("pthread_create");
-              exit(EXIT_FAILURE);
-            }
-            if (pthread_join(gare, &result))
-            {
-              perror("pthread_join");
-              exit(EXIT_FAILURE);
-            }
-            printf("\n\n%s\n", "Fin programme." );
+          infoThread[0] = Lignes[ligneI].gares[gareI].nom;
+          char str[12];
+          sprintf(str, "%d", numPassager);
+          infoThread[1] = str; 
+
+          pthread_t gare;
+
+          //printf("gare : %s numPassager : %s \n", infoThread[0], infoThread[1]);
+
+          if (pthread_create(&gare, NULL, payerBillet, &infoThread))
+          {
+            perror("pthread_create");
+            exit(EXIT_FAILURE);
+          }
+          if (pthread_join(gare, &result))
+          {
+            perror("pthread_join");
+            exit(EXIT_FAILURE);
+          }
+            
 
 
           }
@@ -462,7 +472,7 @@ int main(int argc, char** argv)
   
 
     printf("\nTous les passagers ont bien payés\n");
-    
+
     //time(&fin);
     //printf("%f secondes \n", difftime(fin, debut));
     /*finish = clock();
@@ -477,7 +487,7 @@ int main(int argc, char** argv)
     //Détruire la semaphore pour les guichets
     sem_destroy(&semaphoreGuichet);
 
-
+    printf("\n\n%s\n", "Fin programme." );
   }
   else if( argc > 4 ){
     printf("Probleme avec arguments passes en params ...\n");
