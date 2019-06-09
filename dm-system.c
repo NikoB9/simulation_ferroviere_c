@@ -77,6 +77,7 @@ double debutMicrosecondes;
 **************************************************************/
 
 //Tableau de noms de Gares 
+//Nous n'utilisons que 20 gares pour avoir exactement 2 gares qui ont des interchangements sur une meme ligne
 char *nomGare[] =
 {
   "Saint-Lazare",
@@ -98,14 +99,14 @@ char *nomGare[] =
   "Vannes",
   "Brest",
   "Strasbourg",
-  "Avignon",
+  "Avignon"/*,
   "Adainville",
   "Saint-Rémy-Les-Chebreuses",
   "Saint-Brieuc",
   "La Rochelle",
   "Rennes",
   "Gap"
-};
+*/};
 
  
 /*Renvoie en long le Temps en microseconds */
@@ -297,11 +298,13 @@ int main(int argc, char** argv)
     //avec nom prédéfinis dans nomGare[], 
     //une recette à 0.0 et un nombre de Voyageurs à 0 
     //entre 5 et 20 guichets
+    //La gare de la ligne N+1 a comme première gare la dernière gare de la ligne N
+    //principe de chevauchement des gares.
      GaresLigne1[i] = (gare) {nomGare[i], 0.0, 0, nbAleatoire(5, 20)};
-     GaresLigne2[i] = (gare) {nomGare[i+5],0.0, nbAleatoire(5, 20)};
-     GaresLigne3[i] = (gare) {nomGare[i+10],0.0, nbAleatoire(5, 20)};
-     GaresLigne4[i] = (gare) {nomGare[i+15],0.0,15, nbAleatoire(5, 20)};
-     GaresLigne5[i] = (gare) {nomGare[i+20],0.0,8, nbAleatoire(5, 20)};
+     GaresLigne2[i] = (gare) {nomGare[i+4],0.0, nbAleatoire(5, 20)};
+     GaresLigne3[i] = (gare) {nomGare[i+8],0.0, nbAleatoire(5, 20)};
+     GaresLigne4[i] = (gare) {nomGare[i+12],0.0,15, nbAleatoire(5, 20)};
+     GaresLigne5[i] = (gare) {nomGare[(i+16)%20],0.0,8, nbAleatoire(5, 20)};
   }
 
   //Création des trains
@@ -393,7 +396,6 @@ int main(int argc, char** argv)
       
       for (int gareI = 0; gareI < 5; ++gareI)
       {
-
         //nombre de passager à envoyer dans chaque gare
         int nbPassagers;
         if (gareNum != 25)
@@ -404,6 +406,10 @@ int main(int argc, char** argv)
         else{
           nbPassagers = nbPassagersGare25;
         }
+
+
+        //création des voyageurs avec un numero et une cagnote 
+
 
         /***********
 **
@@ -419,8 +425,8 @@ int main(int argc, char** argv)
 **
         *********/
 
-        //gare laGare = (gare) Lignes[0].gares[1];  -----<< Pourquoi gares[1] ?? j'ai mis 0 à la place
-        gare laGare = (gare) Lignes[0].gares[0];
+        //gare laGare = (gare) Lignes[0].gares[1]; <<-----<< Pourquoi gares[1] ?? 
+        gare laGare = (gare) Lignes[ligneI].gares[gareI];
 
         printf("nombre de guichets en gare : %d\n", laGare.nombreGuichets);
         printf("nom gare : %s\n", laGare.nom);
@@ -443,6 +449,14 @@ int main(int argc, char** argv)
           char str[12];
           sprintf(str, "%d", numPassager);
           infoThread[1] = str; 
+
+          /*struct voyageur
+          {
+            int identifiantClient;
+            gare derniereGareDePassage;
+            gare garesDePassage[];
+            int cagnote;
+          };*/
 
           pthread_t gare;
 
