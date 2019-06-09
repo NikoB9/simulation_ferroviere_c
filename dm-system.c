@@ -173,15 +173,21 @@ double nbAleatoire(double deb, double fin){
 **Inputs : 
 **Ouputs : nombre aléatoire entier sous forme de chaine de caractère de taille 6
 **************************************************************/
-char randomNomTrainGlobal[6];
+char randomNomTrainGlobal[25][6];
 char* numTrainRandom(){
-
-  for (int i = 0; i < 6; ++i)
+  for (int k = 0; k < 25; ++k)
   {
-    // (char)rand()%9 => une valeur en code ascii compris entre 0 et 9 entière
-    char tempChar = ('0'+(char)(rand()%9));
-    randomNomTrainGlobal[i]=tempChar;
+    for (int i = 0; i < 5; ++i)
+    {
+      // (char)rand()%9 => une valeur en code ascii compris entre 0 et 9 entière
+      char tempChar = ('0'+(char)(rand()%9));
+      randomNomTrainGlobal[k][i]=tempChar;
+    }
+    //ajout du caractère '\0' pour signaler la fin du "string"
+    randomNomTrainGlobal[k][5]='\0';
+    //printf("ligne %d  : %s\n",k, randomNomTrainGlobal[k] );
   }
+    
 
   return randomNomTrainGlobal;
 }
@@ -271,6 +277,7 @@ void*  payerBillet (void* infos) {
 
 int main(int argc, char** argv)
 {
+  printf("%s\n\n", "Debut programme." );
   //Initialiation de l'horloge
   debutMicrosecondes=getMicrotime();
 
@@ -299,19 +306,22 @@ int main(int argc, char** argv)
   train TrainsLigne3[5];
   train TrainsLigne4[5];
   train TrainsLigne5[5];
+
+  //remplissage du tableau randomNomTrainGlobal de valeurs aléatoire
+  numTrainRandom();
+
+  //printf("value :here  : %s\n", randomNomTrainGlobal[0] );
+
   for (int i = 0; i < 5; i++)
   {
+    TrainsLigne1[i]=(train){&randomNomTrainGlobal[i], 0, 150,-1, 1};
+    TrainsLigne2[i]=(train){&randomNomTrainGlobal[i+5], 0, 150,-1, 1};
+    TrainsLigne3[i]=(train){&randomNomTrainGlobal[i+10], 0, 150,-1, 1};
+    TrainsLigne4[i]=(train){&randomNomTrainGlobal[i+15], 0, 150,-1, 1};
+    TrainsLigne5[i]=(train){&randomNomTrainGlobal[i+20], 0, 150,-1, 1};
 
-    TrainsLigne1[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
-    TrainsLigne2[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
-    TrainsLigne3[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
-    TrainsLigne4[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
-    TrainsLigne5[i]=(train){(char*)numTrainRandom(), 0, 150,-1, 1};
-
-    printf("%s\n", TrainsLigne1[i].numero);
+    //printf("%s\n", TrainsLigne1[i].numero);
   }
-  trainDisp(TrainsLigne1[0]);
-  trainDisp(TrainsLigne1[1]);
 
   //Création des lignes pour remplir la map du réseau ferrovier 
   ligne Lignes[5];
@@ -438,6 +448,7 @@ int main(int argc, char** argv)
               perror("pthread_join");
               exit(EXIT_FAILURE);
             }
+            printf("\n\n%s\n", "Fin programme." );
 
 
           }
