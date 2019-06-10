@@ -93,6 +93,13 @@ clock_t start, finish;
 double duration;
 double debutMicrosecondes;
 
+//Tableau de thread pour les trains 
+pthread_t threadsTrain[25];
+void* results[25];
+
+//VARIABLE GLOBALE LIGNES 
+ligne Lignes[5];
+int heureG=-1;
 
 /*************************************************************
 **  CREATION DE LA MAP
@@ -141,6 +148,8 @@ long double getMicrotime(){
 }
 
 
+
+
 //on ramène donc en microseconde pour nos besoin en divisant par 10^-6
 /*************************************************************
 ** RATIO
@@ -158,7 +167,7 @@ double ratioMinsEnMs(double nbMinutes){
 **Inputs : nombre de secondes (float)
 **Ouputs : Temps affiché (char*)
 **************************************************************/
-void afficheTemps(double diff){
+void afficheTemps(double diff,int i){
 
   //la difference en seconde correspond au temps d'execution 
   //nous devons le passer en temps simule 
@@ -183,7 +192,21 @@ void afficheTemps(double diff){
   time(&dateJour);
   struct tm tm = *localtime(&dateJour);
 
-  printf("___%d/%d/%d__:__%d:%d:%d___\n", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900, heure, minutes, (int) secondes);
+  if(i==1) printf("___%d/%d/%d__:__%d:%d:%d___\n", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900, heure, minutes, (int) secondes);
+  if(i!=1 && heureG!=heure ){//affichage toutes les heures 
+    heureG=heure;
+    printf("----------------------------------  Etat initial du Reseau ferrovier  ----------------------------------\n\n");
+    for (int i = 0; i < 5; ++i)
+    {
+      printf("\n");
+      LigneDisp(Lignes[i]);
+      printf("\n");
+    }
+    printf("\n-------------------------------  Fin de l'affichage du Reseau ferrovier  -------------------------------\n\n");
+    printf("___%d/%d/%d__:__%d:%d:%d___\n", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900, heure, minutes, (int) secondes);
+ 
+  }
+  else{}
 }
 
 /*************************************************************
@@ -260,7 +283,7 @@ void LigneDisp(ligne Ligne){
     gareDisp(Ligne.gares[i]);
   }
 
-  }
+}
 
 
 /*************************************************************
@@ -295,7 +318,7 @@ void*  payerBillet (void* infos) {
 
   //Recuperation de la duree en secondes 
   duration=(getMicrotime()-debutMicrosecondes)/1000000;
-  afficheTemps(duration);
+  afficheTemps(duration,1);
 
   /*int* result = malloc(sizeof(int));
     *result = (10);
@@ -363,27 +386,34 @@ void* AvancementTrain(void *infos){
   train* leTrain = contener->Train;
   ligne* laLigne = contener->Ligne;
 
-//Recherche de l'id Correspondant
-  int idGareDest = leTrain->gareActuelle;
-  //printf("%d\n", !1);
-  if(idGareDest==4 || idGareDest==0){leTrain->aller=!leTrain->aller;}
-  usleep(100000);
-  //printf("Ancienne dest : %d  zncienne gare %s  ",idGareDest, nomGare[idGareDest]);
-  if(leTrain->aller==0){
-    //on veut revenir en arrière donc on va soustraire 1 à l'indice de gare
-    //Calcul général : on soustrait 1 à l'indice
-    //Mais si on est à l'indice 0 on doit revenir à l'indice 4 donc 
-    // 0-1 = -1 => +5 = 4 => %5 =4 
-    idGareDest=(idGareDest-1+5)%5;
-  }
-  else{
-    //On avance on fait le modulo de 5 pour le cas du débordement
-    idGareDest=(idGareDest+1)%5;
-  }
+  while(1){
+    //Recherche de l'id Correspondant
+    int idGareDest = leTrain->gareActuelle;
+    //printf("%d\n", !1);
+    if(idGareDest==4 || idGareDest==0){leTrain->aller=!leTrain->aller;}
+    usleep(100000);
+    //printf("Ancienne dest : %d  ancienne gare %s  ",idGareDest, nomGare[idGareDest]);
+    if(leTrain->aller==0){
+      //on veut revenir en arrière donc on va soustraire 1 à l'indice de gare
+      //Calcul général : on soustrait 1 à l'indice
+      //Mais si on est à l'indice 0 on doit revenir à l'indice 4 donc 
+      // 0-1 = -1 => +5 = 4 => %5 =4 
+      idGareDest=(idGareDest-1+5)%5;
+    }
+    else{
+      //On avance on fait le modulo de 5 pour le cas du débordement
+      idGareDest=(idGareDest+1)%5;
+    }
 
-  //Avancement du train 
-  //Une fois prise, transfert du train
-  leTrain->gareActuelle=idGareDest; 
+    //Avancement du train 
+    //Une fois prise, transfert du train
+    leTrain->gareActuelle=idGareDest; 
+    //printf("%d\n",&laLigne);
+    //Recuperation de la duree en secondes 
+    duration=(getMicrotime()-debutMicrosecondes)/1000000;
+    afficheTemps(duration,0);
+  }
+    
 
   
   //printf("Prochaine dest : %d  %d  nouvelle gare  :%s\n",idGareDest, leTrain->aller,nomGare[idGareDest] );
@@ -455,7 +485,6 @@ int main(int argc, char** argv)
   }
 
   //Création des lignes pour remplir la map du réseau ferrovier 
-  ligne Lignes[5];
   Lignes[0] = (ligne){"Frisson", (train*) TrainsLigne1, (gare*) GaresLigne1};
   Lignes[1] = (ligne){"Magie", (train*) TrainsLigne2, (gare*) GaresLigne2};
   Lignes[2] = (ligne){"Grand tour", (train*) TrainsLigne3, (gare*) GaresLigne3};
@@ -512,48 +541,41 @@ int main(int argc, char** argv)
     //GESTION DE LA SEMAPHORE 
 
     sem_init(&semaphoreGare, 0, 2);
-    int finished = 0;
-    while(!finished){
-      for (int k = 0; k < 5; ++k)
-      {//Pour chaque ligne
-      /*printf("Avant changement sur la ligne %d \n\n",k );
-      LigneDisp(Lignes[k]);*/
-        for (int l = 0; l < 5; ++l)
-        {//pour chaque train de la ligne
-          int i=l%5;
-          //i correspond à l'indice des trains dans la ligne d'où le modulo 5
-          //5 est le nombre d'appel de la fonction avanceTrain
+    for (int k = 0; k < 5; ++k)
+    {//Pour chaque ligne
+    /*printf("Avant changement sur la ligne %d \n\n",k );
+    LigneDisp(Lignes[k]);*/
+      for (int l = 0; l < 5; ++l)
+      {//pour chaque train de la ligne
+        int i=l%5;
+        //i correspond à l'indice des trains dans la ligne d'où le modulo 5
+        //5 est le nombre d'appel de la fonction avanceTrain
 
-          //Creation du thread pour le train
-          pthread_t AvanceTrain;
+        //creation du contener 
+        contenerTrainGares contener;
+        contener.Train = &Lignes[k].trains[i];
+        contener.Ligne = &Lignes[k];
 
-          //creation du contener 
-          contenerTrainGares contener;
-          contener.Train = &Lignes[k].trains[i];
-          contener.Ligne = &Lignes[k];
+        results[k*5+i] = pthread_create(&threadsTrain[k*5+i], NULL, AvancementTrain, &contener);
 
-          void* result = pthread_create(&AvanceTrain, NULL, AvancementTrain, &contener);
-
-          if (result)
-          {
-            perror("pthread_create");
-            exit(EXIT_FAILURE);
-          }
-          if (pthread_join(AvanceTrain, &result))
-          {
-            perror("pthread_join");
-            exit(EXIT_FAILURE);
-          }
-
+        if (results[k*5+i])
+        {
+          perror("pthread_create");
+          exit(EXIT_FAILURE);
         }
-      printf("\n Après  changement sur la ligne %d \n",k );
-      LigneDisp(Lignes[k]);
-    }
-    //Recuperation de la duree en secondes 
-    duration=(getMicrotime()-debutMicrosecondes)/1000000;
-    afficheTemps(duration);
+        if (pthread_join(threadsTrain[k*5+i], &results[k*5+i]))
+        {
+          perror("pthread_join");
+          exit(EXIT_FAILURE);
+        }
+
+      }
+    printf("\n Après  changement sur la ligne %d \n",k );
+    LigneDisp(Lignes[k]);
   }
-    
+  //Recuperation de la duree en secondes 
+  duration=(getMicrotime()-debutMicrosecondes)/1000000;
+  afficheTemps(duration,1);
       
     //destruction des semaphores gares 
     destroySemaphoreGares();
@@ -599,19 +621,7 @@ int main(int argc, char** argv)
         //création des voyageurs avec un numero et une cagnote 
 
 
-        /***********
-**
-**
-*
-*
-*
-**CREER DES VOYAGEURS AVEC UN NUMERO ET UNE CAGNOTTE
-*
-*
-*
-**
-**
-        *********/
+        
 
         //gare laGare = (gare) Lignes[0].gares[1]; <<-----<< Pourquoi gares[1] ?? 
         gare laGare = (gare) Lignes[ligneI].gares[gareI];
@@ -683,7 +693,7 @@ int main(int argc, char** argv)
 
     //Recuperation de la duree en secondes 
     duration=(getMicrotime()-debutMicrosecondes)/1000000;
-    afficheTemps(duration);
+    afficheTemps(duration,1);
 
 
     //Détruire la semaphore pour les guichets
