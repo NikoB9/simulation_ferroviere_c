@@ -24,7 +24,7 @@
 //Faciliter le déploiement
 //Si DEBUG l'affichage se fait en console 
 //SI PROD l'affichage se fait dans le fichier registreDm.txt
-#define MODE "PROD"
+#define MODE "DEBUG"
 
 
 
@@ -384,6 +384,8 @@ void* AvancementTrain(void *infos){
   //Avancement du train 
   //Une fois prise, transfert du train
   leTrain->gareActuelle=idGareDest; 
+
+  
   //printf("Prochaine dest : %d  %d  nouvelle gare  :%s\n",idGareDest, leTrain->aller,nomGare[idGareDest] );
     
 }
@@ -510,141 +512,52 @@ int main(int argc, char** argv)
     //GESTION DE LA SEMAPHORE 
 
     sem_init(&semaphoreGare, 0, 2);
+    int finished = 0;
+    while(!finished){
+      for (int k = 0; k < 5; ++k)
+      {//Pour chaque ligne
+      /*printf("Avant changement sur la ligne %d \n\n",k );
+      LigneDisp(Lignes[k]);*/
+        for (int l = 0; l < 5; ++l)
+        {//pour chaque train de la ligne
+          int i=l%5;
+          //i correspond à l'indice des trains dans la ligne d'où le modulo 5
+          //5 est le nombre d'appel de la fonction avanceTrain
 
-    for (int k = 0; k < 5; ++k)
-    {//Pour chaque ligne
-      printf("Avant changement sur la ligne %d \n\n",k );
-      LigneDisp(Lignes[k]);
-      for (int l = 0; l < 5; ++l)
-      {//pour chaque train de la ligne
-        int i=l%5;
-        //i correspond à l'indice des trains dans la ligne d'où le modulo 5
-        //5 est le nombre d'appel de la fonction avanceTrain
+          //Creation du thread pour le train
+          pthread_t AvanceTrain;
 
-        //Creation du thread pour le train
-        pthread_t AvanceTrain;
+          //creation du contener 
+          contenerTrainGares contener;
+          contener.Train = &Lignes[k].trains[i];
+          contener.Ligne = &Lignes[k];
 
-        //creation du contener 
-        contenerTrainGares contener;
-        contener.Train = &Lignes[k].trains[i];
-        contener.Ligne = &Lignes[k];
+          void* result = pthread_create(&AvanceTrain, NULL, AvancementTrain, &contener);
 
-        void* result = pthread_create(&AvanceTrain, NULL, AvancementTrain, &contener);
-      
-        if (result)
-        {
-          perror("pthread_create");
-          exit(EXIT_FAILURE);
-        }
-        if (pthread_join(AvanceTrain, &result))
-        {
-          perror("pthread_join");
-          exit(EXIT_FAILURE);
-        }
-
-
-
-
-
-
-        /*//Recupération de la prochaine destination du train 
-        char *gareNameActuel = Lignes[0].trains[i].gareActuelle; 
-        int idGareDest=0;
-        for (int l = 0; l < 20; ++l)
-        {
-          if( Lignes[0].trains[i].gareActuelle!=-1 &&
-                strcmp(nomGare[l],nomGare[Lignes[0].trains[i].gareActuelle])==0 )
+          if (result)
           {
-            idGareDest=l;    
+            perror("pthread_create");
+            exit(EXIT_FAILURE);
           }
-          else if(Lignes[0].trains[i].gareActuelle==-1){
-            idGareDest=0*4;
+          if (pthread_join(AvanceTrain, &result))
+          {
+            perror("pthread_join");
+            exit(EXIT_FAILURE);
           }
-        }
-        idGareDest=1;
 
-        if(Lignes[0].trains[i].aller==0){
-          //on veut revenir en arrière donc on va soustraire 1 à l'indice de gare
-          //Calcul général : on soustrait 1 à l'indice
-          //Mais si on est à l'indice 0 on doit revenir à l'indice 19 donc 
-          // 0-1 = -1 => +20 = 19 => %20 =19 
-          idGareDest=(idGareDest-1+20)%20;
         }
-        else{
-          //On avance on fait le modulo de 20 pour le cas du débordement
-          idGareDest=(idGareDest+1)%20;
-        }
-
-        //Création du contener 
-        contenerTrainGares contener;
-        contener.idGareDest = idGareDest;
-        contener.Train = &Lignes[0].trains[i];
-        
-
-        //création du thread
-        pthread_t gareGestionTrain;
-        void* result = pthread_create(&gareGestionTrain, NULL, TrainArriveGare, &contener);
-      
-        if (result)
-        {
-          perror("pthread_create");
-          exit(EXIT_FAILURE);
-        }
-        if (pthread_join(gareGestionTrain, &result))
-        {
-          perror("pthread_join");
-          exit(EXIT_FAILURE);
-        }
-      
-
-        LigneDisp(Lignes[0]);*/
-      }
       printf("\n Après  changement sur la ligne %d \n",k );
       LigneDisp(Lignes[k]);
     }
+    //Recuperation de la duree en secondes 
+    duration=(getMicrotime()-debutMicrosecondes)/1000000;
+    afficheTemps(duration);
+  }
+    
       
     //destruction des semaphores gares 
     destroySemaphoreGares();
-    //trainDisp(Lignes[0].trains[0]);
-    //Supposons que la gare de départ est Montparnasse indice 1
-    /*char* gareName="Bordeaux";
-    int idGareDest=0;
-    for (int i = 0; i < 20; ++i)
-    {
-      if(strcmp(nomGare[i],gareName)==0){
-        idGareDest=i;      
-      }
-      
-    }
-
-    contenerTrainGares contener;
-    contener.idGareDest = idGareDest;
-    contener.Train = &Lignes[0].trains[0];
-    /*printf("Main %d\n",&Lignes[0].trains[0]);
-    printf("Main gare actuelle %d\n",&Lignes[0].trains[0].gareActuelle);*/
     
-
-   /* pthread_t gareGestionTrain;
-
-    void* result = pthread_create(&gareGestionTrain, NULL, TrainArriveGare, &contener);
-    if (result)
-    {
-      perror("pthread_create");
-      exit(EXIT_FAILURE);
-    }
-    if (pthread_join(gareGestionTrain, &result))
-    {
-      perror("pthread_join");
-      exit(EXIT_FAILURE);
-    }
-    trainDisp(Lignes[0].trains[0]);
-    //destruction du semaphore
-    sem_destroy(&semaphoreGare);*/
-    /*for (int i = 0; i < 5; ++i)
-    {
-      //pour chaque gare 
-
-    }*/
   }
   
 
@@ -788,3 +701,99 @@ int main(int argc, char** argv)
   }
   return 0;
 }
+
+
+
+
+        /*//Recupération de la prochaine destination du train 
+        char *gareNameActuel = Lignes[0].trains[i].gareActuelle; 
+        int idGareDest=0;
+        for (int l = 0; l < 20; ++l)
+        {
+          if( Lignes[0].trains[i].gareActuelle!=-1 &&
+                strcmp(nomGare[l],nomGare[Lignes[0].trains[i].gareActuelle])==0 )
+          {
+            idGareDest=l;    
+          }
+          else if(Lignes[0].trains[i].gareActuelle==-1){
+            idGareDest=0*4;
+          }
+        }
+        idGareDest=1;
+
+        if(Lignes[0].trains[i].aller==0){
+          //on veut revenir en arrière donc on va soustraire 1 à l'indice de gare
+          //Calcul général : on soustrait 1 à l'indice
+          //Mais si on est à l'indice 0 on doit revenir à l'indice 19 donc 
+          // 0-1 = -1 => +20 = 19 => %20 =19 
+          idGareDest=(idGareDest-1+20)%20;
+        }
+        else{
+          //On avance on fait le modulo de 20 pour le cas du débordement
+          idGareDest=(idGareDest+1)%20;
+        }
+
+        //Création du contener 
+        contenerTrainGares contener;
+        contener.idGareDest = idGareDest;
+        contener.Train = &Lignes[0].trains[i];
+        
+
+        //création du thread
+        pthread_t gareGestionTrain;
+        void* result = pthread_create(&gareGestionTrain, NULL, TrainArriveGare, &contener);
+      
+        if (result)
+        {
+          perror("pthread_create");
+          exit(EXIT_FAILURE);
+        }
+        if (pthread_join(gareGestionTrain, &result))
+        {
+          perror("pthread_join");
+          exit(EXIT_FAILURE);
+        }
+      
+
+        LigneDisp(Lignes[0]);*/
+
+        //trainDisp(Lignes[0].trains[0]);
+    //Supposons que la gare de départ est Montparnasse indice 1
+    /*char* gareName="Bordeaux";
+    int idGareDest=0;
+    for (int i = 0; i < 20; ++i)
+    {
+      if(strcmp(nomGare[i],gareName)==0){
+        idGareDest=i;      
+      }
+      
+    }
+
+    contenerTrainGares contener;
+    contener.idGareDest = idGareDest;
+    contener.Train = &Lignes[0].trains[0];
+    /*printf("Main %d\n",&Lignes[0].trains[0]);
+    printf("Main gare actuelle %d\n",&Lignes[0].trains[0].gareActuelle);*/
+    
+
+   /* pthread_t gareGestionTrain;
+
+    void* result = pthread_create(&gareGestionTrain, NULL, TrainArriveGare, &contener);
+    if (result)
+    {
+      perror("pthread_create");
+      exit(EXIT_FAILURE);
+    }
+    if (pthread_join(gareGestionTrain, &result))
+    {
+      perror("pthread_join");
+      exit(EXIT_FAILURE);
+    }
+    trainDisp(Lignes[0].trains[0]);
+    //destruction du semaphore
+    sem_destroy(&semaphoreGare);*/
+    /*for (int i = 0; i < 5; ++i)
+    {
+      //pour chaque gare 
+
+    }*/
