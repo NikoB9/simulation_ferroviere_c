@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/wait.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 #include <pthread.h>
 #include <semaphore.h>
 #include <time.h>
@@ -17,6 +20,13 @@
 //donc 1 minutes simulée vaut 1/(24*60) minute de la vie réelle
 #define RATIO_MINUTE 1./(24*60)
 #define DUREE_DEPLACEMENT_TRAIN_ENTRE_GARE 10.
+
+//Faciliter le déploiement
+//Si DEBUG l'affichage se fait en console 
+//SI PROD l'affichage se fait dans le fichier registreDm.txt
+#define MODE "PROD"
+
+
 
 //bin ne sert à rien... Juste à placer des scanf dans différents endroit du code pour 
 //mettre en pause l'éxécution lors du déboguage
@@ -355,7 +365,7 @@ void* AvancementTrain(void *infos){
 
 //Recherche de l'id Correspondant
   int idGareDest = leTrain->gareActuelle;
-  printf("%d\n", !1);
+  //printf("%d\n", !1);
   if(idGareDest==4 || idGareDest==0){leTrain->aller=!leTrain->aller;}
   usleep(100000);
   //printf("Ancienne dest : %d  zncienne gare %s  ",idGareDest, nomGare[idGareDest]);
@@ -384,6 +394,19 @@ int main(int argc, char** argv)
   printf("%s\n\n", "Debut programme." );
   //Initialiation de l'horloge
   debutMicrosecondes=getMicrotime();
+
+  
+  //mode d'affichages  
+  int out;
+  if(MODE=="DEBUG"){}
+  else{
+    out = open("registreDm.txt", O_WRONLY | O_TRUNC | O_CREAT, S_IRUSR | S_IRGRP | S_IWGRP | S_IWUSR);
+    // redirige stdout vers le fichier out 
+    dup2(out, 1);
+    // Ferme les descripteurs inutilisés 
+    close(out);
+  }
+    
 
    //Initialisation Gare 
   gare GaresLigne1[5];
@@ -488,14 +511,16 @@ int main(int argc, char** argv)
 
     sem_init(&semaphoreGare, 0, 2);
 
-    for (int k = 0; k < 1; ++k)
+    for (int k = 0; k < 5; ++k)
     {//Pour chaque ligne
+      printf("Avant changement sur la ligne %d \n\n",k );
+      LigneDisp(Lignes[k]);
       for (int l = 0; l < 5; ++l)
       {//pour chaque train de la ligne
         int i=l%5;
         //i correspond à l'indice des trains dans la ligne d'où le modulo 5
-        //68 est le nombre d'appel de la fonction avanceTrain
-        LigneDisp(Lignes[k]);
+        //5 est le nombre d'appel de la fonction avanceTrain
+
         //Creation du thread pour le train
         pthread_t AvanceTrain;
 
@@ -503,7 +528,6 @@ int main(int argc, char** argv)
         contenerTrainGares contener;
         contener.Train = &Lignes[k].trains[i];
         contener.Ligne = &Lignes[k];
-
 
         void* result = pthread_create(&AvanceTrain, NULL, AvancementTrain, &contener);
       
@@ -575,6 +599,8 @@ int main(int argc, char** argv)
 
         LigneDisp(Lignes[0]);*/
       }
+      printf("\n Après  changement sur la ligne %d \n",k );
+      LigneDisp(Lignes[k]);
     }
       
     //destruction des semaphores gares 
