@@ -420,11 +420,11 @@ int main(int argc, char** argv)
 
   for (int i = 0; i < 5; i++)
   {
-    TrainsLigne1[i]=(train){&randomNomTrainGlobal[i], 0, 150,0, 0};
-    TrainsLigne2[i]=(train){&randomNomTrainGlobal[i+5], 0, 150,4, 0};
-    TrainsLigne3[i]=(train){&randomNomTrainGlobal[i+10], 0, 150,8, 0};
-    TrainsLigne4[i]=(train){&randomNomTrainGlobal[i+15], 0, 150,12, 0};
-    TrainsLigne5[i]=(train){&randomNomTrainGlobal[i+20], 0, 150,16, 0};
+    TrainsLigne1[i]=(train){&randomNomTrainGlobal[i], 0, 150,(int)nbAleatoire(0,4), (int)nbAleatoire(0,2)};
+    TrainsLigne2[i]=(train){&randomNomTrainGlobal[i+5], 0, 150,(int)nbAleatoire(4,8), (int)nbAleatoire(0,2)};
+    TrainsLigne3[i]=(train){&randomNomTrainGlobal[i+10], 0, 150,(int)nbAleatoire(8,12), (int)nbAleatoire(0,2)};
+    TrainsLigne4[i]=(train){&randomNomTrainGlobal[i+15], 0, 150,(int)nbAleatoire(12,16), (int)nbAleatoire(0,2)};
+    TrainsLigne5[i]=(train){&randomNomTrainGlobal[i+20], 0, 150,(int)nbAleatoire(16,20), (int)nbAleatoire(0,2)};
 
     //printf("%s\n", TrainsLigne1[i].numero);
   }
@@ -490,7 +490,7 @@ int main(int argc, char** argv)
 
     for (int k = 0; k < 1; ++k)
     {//Pour chaque ligne
-      for (int l = 0; l < 68; ++l)
+      for (int l = 0; l < 5; ++l)
       {//pour chaque train de la ligne
         int i=l%5;
         //i correspond à l'indice des trains dans la ligne d'où le modulo 5
